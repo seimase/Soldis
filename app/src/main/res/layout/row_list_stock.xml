@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/layout_row"
+        android:background="@drawable/selector_row"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/space_7"
+            android:orientation="vertical"
+            android:layout_marginRight="@dimen/space_5"
+            android:layout_marginLeft="@dimen/space_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:id="@+id/imgProduct"
+                    android:layout_width="@dimen/space_60"
+                    android:layout_height="match_parent" />
+
+                <RelativeLayout
+                    android:layout_marginLeft="@dimen/space_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true">
+
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ui.CustomtextView
+                                android:visibility="gone"
+                                font:name = "GOTHAM_BOOK"
+                                android:text="ID Produk"
+                                android:textSize="@dimen/space_12"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                            <ui.CustomtextView
+                                android:visibility="gone"
+                                font:name = "GOTHAM_BOLD"
+                                android:id="@+id/txtPCode"
+                                android:text="-"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/space_16"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                            <ui.CustomtextView
+                                android:visibility="gone"
+                                font:name = "GOTHAM_BOOK"
+                                android:text="@string/stock_product_name"
+                                android:textSize="@dimen/space_10"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+
+                            <LinearLayout
+                                android:visibility="gone"
+                                android:layout_marginTop="@dimen/space_3"
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="@dimen/space_80"
+                                    android:layout_height="wrap_content">
+
+                                    <ui.CustomtextView
+                                        font:name = "GOTHAM_BOOK"
+                                        android:text="@string/stock_price"
+                                        android:textSize="@dimen/space_10"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:visibility="gone"
+                                    android:layout_weight="1"
+                                    android:gravity="right"
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <ui.CustomtextView
+                                        font:name = "GOTHAM_BOOK"
+                                        android:textSize="@dimen/space_10"
+                                        android:text="@string/stock_stock"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+                                    <LinearLayout
+                                        android:gravity="right"
+                                        android:orientation="horizontal"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+
+                                        <LinearLayout
+
+                                            android:layout_marginRight="@dimen/space_7"
+                                            android:orientation="horizontal"
+                                            android:id="@+id/layout_stockuom1"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content">
+
+                                            <ui.CustomtextView
+                                                android:textAllCaps="true"
+                                                font:name = "GOTHAM_BOOK"
+                                                android:textSize="@dimen/space_10"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="KRT"
+                                                android:id="@+id/txtLabelUOM1" />
+
+                                            <ui.CustomtextView
+                                                font:name = "GOTHAM_BOOK"
+                                                android:textSize="@dimen/space_12"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text=" : "/>
+
+                                            <ui.CustomtextView
+                                                font:name = "GOTHAM_MEDIUM"
+                                                android:textColor="@color/black"
+                                                android:textSize="@dimen/space_12"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="7"
+                                                android:id="@+id/txtUOM1"
+                                                android:layout_below="@+id/txtPCodeName"
+                                                android:layout_alignParentLeft="true"
+                                                android:layout_alignParentStart="true"
+                                                android:layout_alignParentRight="true"
+                                                android:layout_alignParentEnd="true" />
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_marginRight="@dimen/space_7"
+                                            android:orientation="horizontal"
+                                            android:id="@+id/layout_stockuom2"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content">
+
+                                            <ui.CustomtextView
+                                                android:textAllCaps="true"
+                                                font:name = "GOTHAM_BOOK"
+                                                android:textSize="@dimen/space_10"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="BUND"
+                                                android:id="@+id/txtLabelUOM2"/>
+
+                                            <ui.CustomtextView
+                                                font:name = "GOTHAM_BOOK"
+                                                android:textSize="@dimen/space_12"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text=" : "/>
+
+                                            <ui.CustomtextView
+                                                font:name = "GOTHAM_MEDIUM"
+                                                android:textColor="@color/black"
+                                                android:textSize="@dimen/space_12"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="0"
+                                                android:id="@+id/txtUOM2"
+                                                android:layout_below="@+id/txtPCodeName"
+                                                android:layout_alignParentLeft="true"
+                                                android:layout_alignParentStart="true"
+                                                android:layout_alignParentRight="true"
+                                                android:layout_alignParentEnd="true" />
+                                        </LinearLayout>
+
+                                        <LinearLayout
+
+                                            android:orientation="horizontal"
+                                            android:id="@+id/layout_stockuom3"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content">
+
+                                            <ui.CustomtextView
+                                                android:textAllCaps="true"
+                                                font:name = "GOTHAM_BOOK"
+                                                android:textSize="@dimen/space_10"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="PCS"
+                                                android:id="@+id/txtLabelUOM3"/>
+
+                                            <ui.CustomtextView
+                                                font:name = "GOTHAM_BOOK"
+                                                android:textSize="@dimen/space_12"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text=" : "/>
+
+                                            <ui.CustomtextView
+                                                font:name = "GOTHAM_MEDIUM"
+                                                android:textColor="@color/black"
+                                                android:textSize="@dimen/space_12"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="40"
+                                                android:id="@+id/txtUOM3"
+                                                android:layout_below="@+id/txtPCodeName"
+                                                android:layout_alignParentLeft="true"
+                                                android:layout_alignParentStart="true"
+                                                android:layout_alignParentRight="true"
+                                                android:layout_alignParentEnd="true" />
+                                        </LinearLayout>
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <ui.CustomtextView
+                                    android:paddingBottom="@dimen/space_5"
+                                    font:name = "Helvetica_Bold"
+                                    android:id="@+id/txtPCodeName"
+                                    android:textAllCaps="true"
+                                    android:text="-"
+                                    android:gravity="fill"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/space_12"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"/>
+
+                                <View
+                                    android:layout_marginRight="@dimen/space_10"
+                                    android:background="@color/grey_s"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"/>
+
+
+
+                                <LinearLayout
+                                    android:layout_marginTop="@dimen/space_2"
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <LinearLayout
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1">
+
+                                        <ImageView
+                                            android:src="@drawable/masuk"
+                                            android:tint="@color/green"
+                                            android:layout_width="@dimen/space_12"
+                                            android:layout_height="@dimen/space_12" />
+
+                                        <LinearLayout
+                                            android:layout_marginLeft="@dimen/space_2"
+                                            android:orientation="vertical"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content">
+
+                                            <ui.CustomtextView
+                                                font:name = "Helvetica_Book"
+                                                android:text="Masuk"
+                                                android:textSize="@dimen/space_12"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content" />
+
+                                            <ui.CustomtextView
+                                                font:name = "Label"
+                                                android:id="@+id/txtIn"
+                                                android:text="20"
+                                                android:textSize="@dimen/space_12"
+                                                android:textColor="@color/black"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content" />
+                                        </LinearLayout>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1">
+
+                                        <ImageView
+                                            android:src="@drawable/keluar"
+                                            android:tint="@color/red"
+                                            android:layout_width="@dimen/space_12"
+                                            android:layout_height="@dimen/space_12" />
+
+                                        <LinearLayout
+                                            android:layout_marginLeft="@dimen/space_2"
+                                            android:orientation="vertical"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content">
+
+                                            <ui.CustomtextView
+                                                font:name = "Helvetica_Book"
+                                                android:text="Keluar"
+                                                android:textSize="@dimen/space_12"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content" />
+
+                                            <ui.CustomtextView
+                                                font:name = "Label"
+                                                android:id="@+id/txtOut"
+                                                android:text="20"
+                                                android:textSize="@dimen/space_12"
+                                                android:textColor="@color/red"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content" />
+                                        </LinearLayout>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1">
+
+
+                                        <LinearLayout
+                                            android:layout_marginLeft="@dimen/space_2"
+                                            android:orientation="vertical"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content">
+
+                                            <ui.CustomtextView
+                                                font:name = "Helvetica_Book"
+                                                font:type = "bold"
+                                                android:text="Stock"
+                                                android:textSize="@dimen/space_12"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content" />
+
+                                            <ui.CustomtextView
+                                                font:name = "Label"
+                                                font:type = "bold"
+                                                android:id="@+id/txtStock"
+                                                android:text="20"
+                                                android:textSize="@dimen/space_12"
+                                                android:textColor="@color/black"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content" />
+                                        </LinearLayout>
+                                    </LinearLayout>
+                                </LinearLayout>
+
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:gravity="fill"
+                    android:orientation="horizontal"
+                    android:layout_width="@dimen/space_14"
+                    android:layout_height="match_parent">
+
+                    <View
+                        android:layout_marginRight="@dimen/space_3"
+                        android:layout_gravity="center"
+                        android:background="@color/grey"
+                        android:layout_width="1dp"
+                        android:layout_height="@dimen/space_14"/>
+
+                    <View
+                        android:layout_gravity="center"
+                        android:background="@color/grey"
+                        android:layout_width="1dp"
+                        android:layout_height="@dimen/space_14"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_marginTop="@dimen/space_7"
+            android:background="@color/grey_s"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_2"/>
+    </LinearLayout>
+</RelativeLayout>

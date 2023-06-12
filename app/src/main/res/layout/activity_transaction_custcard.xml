@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/grey_s"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:ignore="NamespaceTypo">
+
+    <include
+        android:visibility="gone"
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar_master"/>
+
+    <RelativeLayout
+        android:id="@+id/layout_contract_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space_10"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/layout_back"
+                android:layout_width="@dimen/space_40"
+                android:layout_height="@dimen/space_40"
+                android:background="@drawable/selector_row_transparant"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="@dimen/space_25"
+                    android:layout_height="@dimen/space_25"
+                    android:src="@drawable/ic_arrow_back"
+                    android:tint="@color/black" />
+
+            </RelativeLayout>
+
+            <ui.CustomtextView
+                android:layout_marginLeft="@dimen/space_5"
+                font:name = "Helvetica_Bold"
+                android:textSize="@dimen/space_18"
+                android:gravity="fill"
+                android:textColor="@color/colorBlackEP"
+                android:text="Transaksi"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <RelativeLayout
+                android:id="@+id/layout_tgl"
+                android:background="@drawable/selector_row_transparant"
+                android:layout_width="@dimen/space_100"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/logo_soldis" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:background="@color/grey_s"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:background="@color/colorBar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_187">
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/space_20"
+                android:background="@color/transparant_pure"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/space_10">
+
+                    <ui.CircleImageView
+                        android:id="@+id/img_avatar"
+                        android:src="@drawable/avatar"
+                        android:layout_width="@dimen/space_60"
+                        android:layout_height="@dimen/space_60" />
+
+                    <RelativeLayout
+                        android:gravity="bottom|right"
+                        android:layout_width="@dimen/space_60"
+                        android:layout_height="@dimen/space_60">
+
+                        <ImageView
+                            android:src="@drawable/edit_pic"
+                            android:layout_width="@dimen/space_18"
+                            android:layout_height="@dimen/space_18" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                </LinearLayout>
+
+                <ui.CustomtextView
+                    font:name = "Helvetica_Medium"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/space_14"
+                    android:text="Nama Outlet"
+                    android:id="@+id/text_name"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <ui.CustomtextView
+                    font:name = "Helvetica_light"
+                    android:textAllCaps="true"
+                    android:maxLines="1"
+                    android:textSize="@dimen/space_12"
+                    android:singleLine="true"
+                    android:id="@+id/text_address"
+                    android:text="Alamat Outlet"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <ui.CustomtextView
+                    font:name = "Helvetica_Book"
+                    android:textSize="@dimen/space_12"
+                    android:singleLine="true"
+                    android:id="@+id/text_tgl"
+                    android:text="Tanggal transaksi : "
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/space_140"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TabLayout
+                android:layout_marginTop="@dimen/space_6"
+                android:id="@+id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_40"
+                android:background="@color/transparant_pure"
+                font:tabTextColor="@color/white"
+                font:tabSelectedTextColor="@color/white"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                app:tabGravity="fill"
+                app:tabIndicatorColor="@color/white"
+                font:tabIndicatorColor="@color/white"
+                app:tabIndicatorHeight="3dp"
+                app:tabMode="fixed"
+                app:tabPaddingBottom="-1dp"
+                app:tabPaddingEnd="-1dp"
+                app:tabPaddingStart="-1dp"
+                app:tabPaddingTop="-1dp"
+                android:elevation="2dp" >
+            </android.support.design.widget.TabLayout>
+
+            <android.support.v7.widget.CardView
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:layout_marginTop="@dimen/space_14"
+                android:layout_marginLeft="@dimen/space_40"
+                android:layout_marginRight="@dimen/space_40"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_45">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_marginRight="@dimen/space_7"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <LinearLayout
+                            android:gravity="right"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ui.CustomtextView
+                                font:name = "Header"
+                                android:textSize="@dimen/space_14"
+                                android:textColor="@color/grey_dark"
+                                android:text="Check In"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <ui.CustomtextView
+                                android:id="@+id/txtCheckin"
+                                font:name = "GOTHAM_BLACK"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/space_14"
+                                android:text="-"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+
+                        </LinearLayout>
+                    </RelativeLayout>
+
+
+
+                    <ImageView
+                        android:src="@drawable/ic_time"
+                        android:tint="@color/grey"
+                        android:layout_width="@dimen/space_35"
+                        android:layout_height="match_parent" />
+
+                    <RelativeLayout
+                        android:layout_marginLeft="@dimen/space_7"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:id="@+id/layout_master_outlet"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ui.CustomtextView
+                                font:name = "Header"
+                                android:textColor="@color/grey_dark"
+                                android:textSize="@dimen/space_14"
+                                android:text="Check Out"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <ui.CustomtextView
+                                android:id="@+id/txtCheckout"
+                                font:name = "GOTHAM_BLACK"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/space_14"
+                                android:text="-"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+                    </RelativeLayout>
+
+
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/pager"
+                android:background="@color/grey_s"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                android:layout_weight="1" >
+            </android.support.v4.view.ViewPager>
+
+
+            <LinearLayout
+                android:background="@drawable/btn_shape_all_green"
+                android:layout_marginRight="@dimen/space_14"
+                android:layout_marginLeft="@dimen/space_14"
+                android:layout_marginBottom="@dimen/space_5"
+                android:layout_marginTop="@dimen/space_5"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:id="@+id/layout_checkout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/img_menu_outlet"
+                    android:tint="@color/white"
+                    android:src="@drawable/ic_store"
+                    android:layout_width="@dimen/space_30"
+                    android:layout_height="@dimen/space_30" />
+
+                <ui.CustomtextView
+                    android:padding="@dimen/space_12"
+                    font:name = "GOTHAM_BOLD"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/space_18"
+                    android:textAllCaps="true"
+                    android:text="SELESAI"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_s"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <include
+        android:visibility="gone"
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar_master"
+        />
+
+    <RelativeLayout
+        android:id="@+id/layout_contract_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_187"
+        android:background="@color/colorBar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space_14"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/layout_back"
+                android:layout_width="@dimen/space_40"
+                android:layout_height="@dimen/space_40"
+                android:background="@drawable/selector_row_transparant"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="@dimen/space_30"
+                    android:layout_height="@dimen/space_30"
+                    android:src="@drawable/ic_arrow_back"
+                    android:tint="@color/white" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_xls"
+                android:background="@drawable/selector_row_transparant"
+                android:layout_width="@dimen/space_40"
+                android:layout_height="@dimen/space_40"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="@dimen/space_30"
+                    android:layout_height="@dimen/space_30"
+                    android:src="@drawable/icon_xls"
+                    android:tint="@color/white" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_25"
+            android:background="@color/transparant_pure"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_10"
+                android:gravity="center">
+
+                <ui.CircleImageView
+                    android:id="@+id/img_avatar"
+                    android:layout_width="@dimen/space_60"
+                    android:layout_height="@dimen/space_60"
+                    android:src="@drawable/avatar" />
+            </RelativeLayout>
+
+            <ui.CustomtextView
+                android:id="@+id/text_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="ID LEADER"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/space_16"
+                font:name="Header" />
+
+            <ui.CustomtextView
+                android:id="@+id/text_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="NAMA LEADER"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/space_12"
+                font:name="Header" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_3"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ui.CustomtextView
+                    android:id="@+id/txtLabelDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dash_date_label"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/space_12"
+                    font:name="GOTHAM_BOOK" />
+
+                <ui.CustomtextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text=" : "
+                    android:textSize="@dimen/space_12"
+                    font:name="GOTHAM_BOOK" />
+
+                <ui.CustomtextView
+                    android:id="@+id/text_tgl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/space_12"
+                    font:name="GOTHAM_BOOK" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/space_150"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_50"
+            android:layout_marginLeft="@dimen/space_40"
+            android:layout_marginRight="@dimen/space_40"
+            android:layout_marginTop="@dimen/space_14"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/space_7"
+            android:paddingTop="@dimen/space_7">
+
+            <ui.CustomtextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="KINERJA SALES"
+                android:textColor="@color/black"
+                android:textSize="@dimen/space_18"
+                android:id="@+id/text_pilih"
+                font:name="Helvetica_Medium"
+                font:type="bold" />
+
+
+        </android.support.v7.widget.CardView>
+
+        <RelativeLayout
+            android:background="@color/grey_s"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/space_14">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/my_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+                <FrameLayout
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center">
+
+                    <android.support.design.widget.FloatingActionButton
+                        android:id="@+id/fab_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:backgroundTint="@color/Green_Papper"
+                        app:useCompatPadding= "true"
+                        app:borderWidth="0dp"
+                        app:elevation="6dp"
+                        app:fabSize="normal"  />
+
+                    <ui.CustomtextView
+                        font:name = "GOTHAM_BOLD"
+                        android:id="@+id/txt_fab"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/dash_mtd"
+                        android:textSize="@dimen/space_10"
+                        android:elevation="6dp"
+                        android:textColor="@android:color/white"
+                        app:layout_anchor="@id/fab_date"
+                        app:layout_anchorGravity="center"/>/>
+                </FrameLayout>
+            </android.support.v7.widget.CardView>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/layout_sync"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ui.CustomtextView
+            font:name = "GOTHAM_BOOK"
+            android:text="Tidak ada data"
+            android:textSize="@dimen/space_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ui.CustomtextView
+            android:layout_marginTop="@dimen/space_7"
+            font:name = "GOTHAM_BOOK"
+            android:id="@+id/txtSync"
+            android:text="Sinkronisasi"
+            android:textSize="@dimen/space_12"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_shape_all_blue_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:background="@color/transparant_pure"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/btn_shape_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ui.CustomtextView
+            font:name = "GOTHAM_BOLD"
+            android:textColor="@color/black"
+            android:id="@+id/textLabel"
+            android:padding="@dimen/space_18"
+            android:text="@string/daily_select_village"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/my_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+
+        <RelativeLayout
+            android:id="@+id/layout_kembali"
+            android:background="@drawable/btn_shape_dialog_half_blue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ui.CustomtextView
+                android:id="@+id/text_cari"
+                font:name = "GOTHAM_BOLD"
+                android:textColor="@color/white"
+                android:padding="@dimen/space_16"
+                android:gravity="center"
+                android:text="@string/daily_back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

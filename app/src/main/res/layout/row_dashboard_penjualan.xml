@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:id="@+id/layout_row"
+        android:background="@drawable/selector_row"
+
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/layout_status"
+            android:background="@color/Green"
+            android:layout_width="@dimen/space_5"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/space_5"
+            android:layout_marginBottom="@dimen/space_5"
+            android:layout_marginLeft="@dimen/space_10"
+            android:layout_marginRight="@dimen/space_7"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_marginRight="@dimen/space_5"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ui.CustomtextView
+                        font:name = "Header"
+                        android:id="@+id/txtOutletName"
+                        android:text="-"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/space_12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:tint="@color/grey"
+                        android:src="@drawable/address"
+                        android:layout_width="@dimen/space_14"
+                        android:layout_height="@dimen/space_14" />
+                    <ui.CustomtextView
+                        android:layout_marginLeft="@dimen/space_5"
+                        font:name = "Header"
+                        android:id="@+id/txtAddress"
+                        android:text="-"
+                        android:textColor="@color/grey"
+                        android:textSize = "@dimen/space_12"
+                        android:maxLines="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_sku"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ui.CustomtextView
+                        font:name = "Content"
+                        android:text="Order No"
+                        android:textSize="@dimen/space_10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <ui.CustomtextView
+                        font:name = "Header"
+                        font:type  = "bold"
+                        android:id="@+id/txtInvAmount"
+                        android:text="-"
+                        android:textColor="@color/blue2"
+                        android:textSize = "@dimen/space_12"
+                        android:maxLines="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ui.CustomtextView
+                        font:name = "Content"
+                        android:text="Total SKU"
+                        android:textSize="@dimen/space_10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <ui.CustomtextView
+                        font:name = "Header"
+                        android:id="@+id/txtSKU"
+                        android:text="-"
+                        android:textColor="@color/black"
+                        android:textSize = "@dimen/space_12"
+                        android:maxLines="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginRight="@dimen/space_5"
+            android:gravity="fill"
+            android:orientation="horizontal"
+            android:layout_width="@dimen/space_14"
+            android:layout_height="match_parent">
+
+            <View
+                android:layout_marginRight="@dimen/space_3"
+                android:layout_gravity="center"
+                android:background="@color/grey"
+                android:layout_width="1dp"
+                android:layout_height="@dimen/space_14"/>
+
+            <View
+                android:layout_gravity="center"
+                android:background="@color/grey"
+                android:layout_width="1dp"
+                android:layout_height="@dimen/space_14"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:background="@color/grey_s"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_2"/>
+</LinearLayout>

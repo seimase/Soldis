@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+	xmlns:font="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText,TextFields,Deprecated,RtlHardcoded,ContentDescription" >
+
+	<android.support.v7.widget.CardView
+		xmlns:card_view="http://schemas.android.com/apk/res-auto"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		card_view:cardUseCompatPadding="true"
+		card_view:cardCornerRadius="@dimen/space_6"
+		card_view:cardElevation="1dp">
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:id="@+id/layout_row"
+			android:background="@drawable/btn_shape_all_white"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content" >
+
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+				<ImageView
+					android:id="@+id/imgProduct"
+					android:layout_width="wrap_content"
+					android:layout_height="115dp"
+					android:layout_alignParentLeft="true"
+					android:layout_alignParentRight="true"
+					android:layout_alignParentTop="true"
+					android:scaleType="fitCenter" />
+
+				<ui.CustomtextView
+					font:name = "Roboto"
+					android:id="@+id/icon_text"
+					android:text="asd"
+					android:gravity="center"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_centerInParent="true"
+					android:textColor="@color/black"
+					android:textSize="@dimen/space_30" />
+
+				<RelativeLayout
+					android:layout_width="match_parent"
+					android:layout_height="@dimen/space_20"
+					android:layout_alignBottom="@+id/imgProduct"
+					android:layout_alignParentLeft="true"
+					android:layout_alignParentStart="true"
+					android:background="@color/transparant">
+
+					<ui.CustomtextView
+						font:name = "GOTHAM_BOOK"
+						android:textSize="@dimen/space_12"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="New Text"
+						android:id="@+id/txtPCode"
+						android:gravity="center_vertical"
+						android:layout_marginLeft="@dimen/space_5"
+						android:layout_marginRight="@dimen/space_5"
+						android:textColor="@color/white"
+						android:layout_alignParentTop="true" />
+				</RelativeLayout>
+			</RelativeLayout>
+
+
+
+			<ui.CustomtextView
+				android:padding="@dimen/space_7"
+				font:name = "GOTHAM_BOLD"
+				android:id="@+id/txtPCodeName"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_alignParentLeft="true"
+				android:layout_below="@+id/imgProduct"
+				android:text="name"
+				android:textColor="@android:color/black"
+				android:textSize="@dimen/space_12"
+				android:textStyle="bold"
+				android:maxLines="3"
+				android:minLines="1" />
+
+
+			<LinearLayout
+				android:visibility="gone"
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+				<LinearLayout
+					android:layout_marginRight="@dimen/space_7"
+					android:orientation="horizontal"
+					android:id="@+id/layout_uom1"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content">
+
+					<ui.CustomtextView
+						android:textAllCaps="true"
+						font:name = "GOTHAM_BOOK"
+						android:textSize="@dimen/space_12"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="Uom1"
+						android:id="@+id/txtLabelUOM1" />
+
+					<ui.CustomtextView
+						font:name = "GOTHAM_BOOK"
+						android:textSize="@dimen/space_12"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text=" : "/>
+
+					<ui.CustomtextView
+						font:name = "GOTHAM_BOOK"
+						android:textColor="@color/black"
+						android:textSize="@dimen/space_12"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="Test"
+						android:id="@+id/txtUOM1"
+						android:layout_below="@+id/txtPCodeName"
+						android:layout_alignParentLeft="true"
+						android:layout_alignParentStart="true"
+						android:layout_alignParentRight="true"
+						android:layout_alignParentEnd="true" />
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_marginRight="@dimen/space_7"
+					android:orientation="horizontal"
+					android:id="@+id/layout_uom2"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content">
+
+					<ui.CustomtextView
+						android:textAllCaps="true"
+						font:name = "GOTHAM_BOOK"
+						android:textSize="@dimen/space_12"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="Uom2"
+						android:id="@+id/txtLabelUOM2"/>
+
+					<ui.CustomtextView
+						font:name = "GOTHAM_BOOK"
+						android:textSize="@dimen/space_12"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text=" : "/>
+
+					<ui.CustomtextView
+						font:name = "GOTHAM_BOOK"
+						android:textColor="@color/black"
+						android:textSize="@dimen/space_12"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="Test"
+						android:id="@+id/txtUOM2"
+						android:layout_below="@+id/txtPCodeName"
+						android:layout_alignParentLeft="true"
+						android:layout_alignParentStart="true"
+						android:layout_alignParentRight="true"
+						android:layout_alignParentEnd="true" />
+				</LinearLayout>
+
+				<LinearLayout
+
+					android:orientation="horizontal"
+					android:id="@+id/layout_uom3"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content">
+
+					<ui.CustomtextView
+						android:textAllCaps="true"
+						font:name = "GOTHAM_BOOK"
+						android:textSize="@dimen/space_12"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="Uom3"
+						android:id="@+id/txtLabelUOM3"/>
+
+					<ui.CustomtextView
+						font:name = "GOTHAM_BOOK"
+						android:textSize="@dimen/space_12"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text=" : "/>
+
+					<ui.CustomtextView
+						font:name = "GOTHAM_BOOK"
+						android:textColor="@color/black"
+						android:textSize="@dimen/space_12"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="Test"
+						android:id="@+id/txtUOM3"
+						android:layout_below="@+id/txtPCodeName"
+						android:layout_alignParentLeft="true"
+						android:layout_alignParentStart="true"
+						android:layout_alignParentRight="true"
+						android:layout_alignParentEnd="true" />
+				</LinearLayout>
+			</LinearLayout>
+
+
+			<ui.CustomtextView
+				android:visibility="gone"
+				font:name = "GOTHAM_BOLD"
+				android:layout_marginTop="@dimen/space_14"
+				android:layout_marginBottom="@dimen/space_5"
+				android:textSize="@dimen/space_14"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Rp"
+				android:id="@+id/txtPrice"
+				android:textColor="@color/black" />
+
+		</LinearLayout>
+
+	</android.support.v7.widget.CardView>
+
+</LinearLayout>

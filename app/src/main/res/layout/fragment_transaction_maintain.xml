@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:background="@color/colorLineBar"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:background="@color/grey_s"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <LinearLayout
+
+            android:layout_margin="@dimen/space_14"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ui.CustomtextView
+                android:padding="@dimen/space_14"
+                font:name = "GOTHAM_MEDIUM"
+                android:text="Maintenance"
+                android:textColor="@color/black"
+                android:textSize="@dimen/space_14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:background="@color/colorLineBar"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ui.CustomtextView
+                            android:layout_marginTop="@dimen/space_14"
+                            android:layout_marginLeft="@dimen/space_14"
+                            font:name = "GOTHAM_BOOK"
+                            android:textSize="@dimen/space_12"
+                            android:text="1."
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <ui.CustomtextView
+                            android:layout_marginTop="@dimen/space_14"
+                            android:layout_marginLeft="@dimen/space_5"
+                            android:layout_marginRight="@dimen/space_14"
+                            font:name = "GOTHAM_BOOK"
+                            android:textSize="@dimen/space_12"
+                            android:text="Bagaimana kondisi bisnis sekarang ini"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <ui.CustomEditText
+                        android:id="@+id/edtQ1"
+                        font:name = "GOTHAM_MEDIUM"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="@dimen/space_22"
+                        android:layout_marginRight="@dimen/space_14"
+                        android:textSize="@dimen/space_12"
+                        android:maxLength="255"
+                        android:digits="0123456789AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz "
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ui.CustomtextView
+                            android:layout_marginTop="@dimen/space_14"
+                            android:layout_marginLeft="@dimen/space_14"
+                            font:name = "GOTHAM_BOOK"
+                            android:textSize="@dimen/space_12"
+                            android:text="2."
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <ui.CustomtextView
+                            android:layout_marginTop="@dimen/space_14"
+                            android:layout_marginLeft="@dimen/space_5"
+                            android:layout_marginRight="@dimen/space_14"
+                            font:name = "GOTHAM_BOOK"
+                            android:textSize="@dimen/space_12"
+                            android:text="Apakah ada masalah dengan service level atau kualitas produk"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <ui.CustomEditText
+                        android:id="@+id/edtQ2"
+                        font:name = "GOTHAM_MEDIUM"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="@dimen/space_22"
+                        android:layout_marginRight="@dimen/space_14"
+                        android:textSize="@dimen/space_12"
+                        android:maxLength="255"
+                        android:digits="0123456789AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz "
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ui.CustomtextView
+
+                            android:layout_marginTop="@dimen/space_14"
+                            android:layout_marginLeft="@dimen/space_14"
+                            font:name = "GOTHAM_BOOK"
+                            android:textSize="@dimen/space_12"
+                            android:text="3."
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <ui.CustomtextView
+                            android:layout_marginTop="@dimen/space_14"
+                            android:layout_marginLeft="@dimen/space_5"
+                            android:layout_marginRight="@dimen/space_14"
+                            font:name = "GOTHAM_BOOK"
+                            android:textSize="@dimen/space_12"
+                            android:text="Apakah ada rencana untuk membuka cabang baru atau membuka bisnis baru"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <ui.CustomEditText
+                        android:id="@+id/edtQ3"
+                        font:name = "GOTHAM_MEDIUM"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="@dimen/space_22"
+                        android:layout_marginRight="@dimen/space_14"
+                        android:textSize="@dimen/space_12"
+                        android:maxLength="255"
+                        android:digits="0123456789AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz "
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ui.CustomtextView
+                            android:layout_marginTop="@dimen/space_14"
+                            android:layout_marginLeft="@dimen/space_14"
+                            font:name = "GOTHAM_BOOK"
+                            android:textSize="@dimen/space_12"
+                            android:text="4."
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <ui.CustomtextView
+                            android:layout_marginTop="@dimen/space_14"
+                            android:layout_marginLeft="@dimen/space_5"
+                            android:layout_marginRight="@dimen/space_14"
+                            font:name = "GOTHAM_BOOK"
+                            android:textSize="@dimen/space_12"
+                            android:text="Adakah akan ada tamabahan PO"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <ui.CustomEditText
+                        android:id="@+id/edtQ4"
+                        font:name = "GOTHAM_MEDIUM"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="@dimen/space_22"
+                        android:layout_marginRight="@dimen/space_14"
+                        android:textSize="@dimen/space_12"
+                        android:maxLength="255"
+                        android:digits="0123456789AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz "
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ui.CustomtextView
+                            android:layout_marginTop="@dimen/space_14"
+                            android:layout_marginLeft="@dimen/space_14"
+                            font:name = "GOTHAM_BOOK"
+                            android:textSize="@dimen/space_12"
+                            android:text="5."
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <ui.CustomtextView
+                            android:layout_marginTop="@dimen/space_14"
+                            android:layout_marginLeft="@dimen/space_5"
+                            android:layout_marginRight="@dimen/space_14"
+                            font:name = "GOTHAM_BOOK"
+                            android:textSize="@dimen/space_12"
+                            android:text="Lain - lain"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <ui.CustomEditText
+                        android:id="@+id/edtQ5"
+                        font:name = "GOTHAM_MEDIUM"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="@dimen/space_22"
+                        android:layout_marginRight="@dimen/space_14"
+                        android:textSize="@dimen/space_12"
+                        android:maxLength="255"
+                        android:digits="0123456789AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz "
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </android.support.v4.widget.NestedScrollView>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <ui.CustomtextView
+        android:id="@+id/txtSave"
+        android:background="@color/Green_chat"
+        font:name = "GOTHAM_BLACK"
+        android:gravity="center"
+        android:padding="@dimen/space_14"
+        android:textSize="@dimen/space_16"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:text="@string/daily_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

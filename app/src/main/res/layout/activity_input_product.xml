@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar_master_transaction"/>
+
+    <View
+        android:background="@color/colorLineBar"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/space_5"
+        android:layout_marginBottom="@dimen/space_5"
+        android:layout_marginLeft="@dimen/space_14"
+        android:layout_marginRight="@dimen/space_14"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:background="@drawable/btn_shape_half_blue_selected"
+            android:layout_width="@dimen/space_7"
+            android:layout_height="match_parent"></RelativeLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/space_5"
+            android:layout_marginBottom="@dimen/space_5"
+            android:layout_marginLeft="@dimen/space_14"
+            android:orientation="vertical"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ui.CustomtextView
+                    font:name = "GOTHAM_MEDIUM"
+                    android:textColor="@color/blue2"
+                    android:textSize="@dimen/space_12"
+                    android:text="Order No"
+                    android:layout_width="@dimen/space_80"
+                    android:layout_height="wrap_content" />
+
+                <ui.CustomtextView
+                    font:name = "GOTHAM_MEDIUM"
+
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/space_12"
+                    android:text=" : "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ui.CustomtextView
+                    font:name = "GOTHAM_MEDIUM"
+
+                    android:textColor="@color/blue2"
+                    android:id="@+id/text_orderno"
+                    android:textSize="@dimen/space_12"
+                    android:text="-"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ui.CustomtextView
+                    font:name = "GOTHAM_MEDIUM"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/space_12"
+                    android:text="@string/daily_outlet_name"
+                    android:layout_width="@dimen/space_80"
+                    android:layout_height="wrap_content" />
+
+                <ui.CustomtextView
+                    font:name = "GOTHAM_MEDIUM"
+
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/space_12"
+                    android:text=" : "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ui.CustomtextView
+                    font:name = "GOTHAM_MEDIUM"
+
+                    android:textColor="@color/black"
+                    android:id="@+id/text_nama_toko"
+                    android:textSize="@dimen/space_12"
+                    android:text="Toko Udin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_marginTop="@dimen/space_3"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ui.CustomtextView
+                    font:name = "GOTHAM_LIGHT"
+                    android:textSize="@dimen/space_12"
+                    android:text="@string/daily_address"
+                    android:layout_width="@dimen/space_80"
+                    android:layout_height="wrap_content" />
+
+                <ui.CustomtextView
+                    font:name = "GOTHAM_BOOK"
+                    android:textSize="@dimen/space_12"
+                    android:text=" : "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ui.CustomtextView
+                    font:name = "GOTHAM_BOOK"
+                    android:id="@+id/text_alamat"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/space_12"
+                    android:text="Jl Pedurenan tangerang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/space_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ui.CustomtextView
+                    font:name = "GOTHAM_LIGHT"
+                    android:textSize="@dimen/space_12"
+                    android:text="@string/daily_classification"
+                    android:layout_width="@dimen/space_80"
+                    android:layout_height="wrap_content" />
+
+                <ui.CustomtextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text=" : "
+                    android:textSize="@dimen/space_12"
+                    font:name="GOTHAM_BOOK" />
+
+                <ui.CustomtextView
+                    font:name = "GOTHAM_BOOK"
+                    android:id="@+id/txtTypeName"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/space_12"
+                    android:text="-"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+                <ui.CustomtextView
+                    font:name = "GOTHAM_MEDIUM"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/space_12"
+                    android:text="in Carton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/space_3"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ui.CustomtextView
+                    font:name = "GOTHAM_LIGHT"
+                    android:textSize="@dimen/space_12"
+                    android:text="Total"
+                    android:layout_width="@dimen/space_80"
+                    android:layout_height="wrap_content" />
+
+                <ui.CustomtextView
+                    font:name = "GOTHAM_BOOK"
+                    android:textSize="@dimen/space_12"
+                    android:text=" : "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ui.CustomtextView
+                    font:name = "GOTHAM_BOOK"
+                    android:id="@+id/text_subtotal"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/space_12"
+                    android:text="Rp 1.500.000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:background="@color/colorLineBar"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="@dimen/space_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <LinearLayout
+            android:id="@+id/ly_search_category"
+            android:orientation="horizontal"
+            android:background="@drawable/btn_shape_all_black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ui.CustomtextView
+                android:id="@+id/txtCategory"
+                android:layout_margin="@dimen/space_4"
+                font:name = "GOTHAM_MEDIUM"
+                android:textSize="@dimen/space_12"
+                android:textColor="@color/black"
+                android:hint="@string/dash_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:layout_marginRight="@dimen/space_3"
+                android:src="@drawable/arrow_down"
+                android:layout_width="@dimen/space_14"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:background="@color/colorLineBar"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/my_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:background="@drawable/selector_row"
+        android:id="@+id/layoutReview"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:background="@color/list_background_pressed"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_2"/>
+
+        <LinearLayout
+            android:paddingBottom="@dimen/space_5"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                android:visibility="gone"
+                layout="@layout/estore_notif"
+                android:id="@+id/estore_notif"/>
+
+            <View
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/space_10"
+                android:layout_marginBottom="@dimen/space_10"
+                android:background="@color/grey"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"/>
+
+            <LinearLayout
+                android:layout_marginLeft="@dimen/space_7"
+                android:layout_marginTop="@dimen/space_5"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ui.CustomtextView
+                    font:name = "Avenir_Book"
+                    android:text="Total"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <ui.CustomtextView
+                    font:name = "Avenir_Black"
+                    font:type = "bold"
+                    android:id="@+id/text_amount1"
+                    android:textSize="@dimen/space_18"
+                    android:textColor="@color/red_deep"
+                    android:text="Rp 0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <ui.CustomtextView
+                font:name = "GOTHAM_BOLD"
+                android:padding="@dimen/space_5"
+                android:textColor="@color/black"
+                android:background="@drawable/btn_shape_all_gradasi_orange"
+                android:layout_marginRight="@dimen/space_7"
+                android:layout_gravity="center"
+                android:text="@string/text_confirmation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:visibility="gone"
+                android:tint="@color/grey_dark"
+                android:layout_marginRight="@dimen/space_7"
+                android:src="@drawable/arrow_forward"
+                android:layout_width="@dimen/space_20"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

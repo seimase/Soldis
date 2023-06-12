@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/layout_row"
+            android:background="@drawable/selector_row"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <View
+                android:visibility="gone"
+                android:id="@+id/layout_status"
+                android:background="@color/Green"
+                android:layout_width="@dimen/space_5"
+                android:layout_height="match_parent"/>
+
+            <LinearLayout
+                android:layout_marginBottom="@dimen/space_5"
+                android:orientation="vertical"
+                android:layout_marginRight="@dimen/space_14"
+                android:layout_marginLeft="@dimen/space_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/space_90"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:background="@drawable/btn_shape_all_black_no_padding"
+                            android:scaleType="fitXY"
+                            android:layout_marginTop="@dimen/space_5"
+                            android:id="@+id/imgProduct"
+                            android:layout_width="@dimen/space_90"
+                            android:layout_height="match_parent" />
+
+                        <RelativeLayout
+                            android:visibility="gone"
+                            android:id="@+id/layout_stars"
+                            android:layout_marginRight="@dimen/space_7"
+                            android:layout_marginTop="@dimen/space_10"
+                            android:gravity="right"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:src="@drawable/icon_stars"
+                                android:tint="@color/darkorange"
+                                android:scaleType="fitXY"
+                                android:layout_width="@dimen/space_14"
+                                android:layout_height="@dimen/space_14" />
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_marginTop="@dimen/space_5"
+                        android:layout_marginLeft="@dimen/space_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true">
+
+
+                            <LinearLayout
+                                android:layout_marginTop="@dimen/space_5"
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <ui.CustomtextView
+                                        android:layout_marginRight="@dimen/space_14"
+                                        font:name = "Header"
+                                        android:id="@+id/txtOutletName"
+                                        android:text="-"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/space_12"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"/>
+
+                                    <RelativeLayout
+                                        android:gravity="right"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+
+                                        <ui.CustomtextView
+                                            android:background="@drawable/btn_shape_all_green"
+                                            android:padding="@dimen/space_5"
+                                            android:id="@+id/text_status"
+                                            android:gravity="right"
+                                            font:name = "GOTHAM_MEDIUM"
+                                            android:textColor="@color/black"
+                                            android:text="@string/daily_outlet_name"
+                                            android:textSize="@dimen/space_10"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            />
+                                    </RelativeLayout>
+
+
+                                </LinearLayout>
+
+
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <ImageView
+                                        android:tint="@color/grey_dark"
+                                        android:src="@drawable/address"
+                                        android:layout_width="@dimen/space_14"
+                                        android:layout_height="@dimen/space_14" />
+                                    <ui.CustomtextView
+                                        android:layout_marginLeft="@dimen/space_5"
+                                        font:name = "Label"
+                                        android:id="@+id/txtAddress"
+                                        android:text="-"
+                                        android:textColor="@color/grey_dark"
+                                        android:textSize = "@dimen/space_12"
+                                        android:maxLines="2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <LinearLayout
+                                        android:orientation="vertical"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1">
+
+                                        <LinearLayout
+                                            android:orientation="horizontal"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1">
+
+                                            <ImageView
+                                                android:tint="@color/black"
+                                                android:src="@drawable/ic_phone"
+                                                android:layout_width="@dimen/space_14"
+                                                android:layout_height="@dimen/space_14" />
+
+                                            <ui.CustomtextView
+                                                android:layout_marginLeft="@dimen/space_5"
+                                                font:name = "Content"
+                                                android:id="@+id/txtTelp"
+                                                android:text="-"
+                                                android:textColor="@color/black"
+                                                android:textSize = "@dimen/space_12"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content" />
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:orientation="horizontal"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1">
+
+                                            <ImageView
+                                                android:tint="@color/grey_dark"
+                                                android:src="@drawable/type"
+                                                android:layout_width="@dimen/space_12"
+                                                android:layout_height="@dimen/space_12" />
+
+                                            <ui.CustomtextView
+                                                android:layout_marginLeft="@dimen/space_5"
+                                                font:name = "Content"
+                                                android:id="@+id/txtTypeName"
+                                                android:text="-"
+                                                android:textColor="@color/blue2"
+                                                android:textSize = "@dimen/space_12"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content" />
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:orientation="vertical"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1.6">
+
+                                        <ui.CustomtextView
+                                            android:gravity="right"
+                                            font:name = "Label"
+                                            android:text="Last Visit"
+                                            android:textSize="@dimen/space_10"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+                                        <ui.CustomtextView
+                                            android:gravity="right"
+                                            font:name = "Header"
+                                            android:id="@+id/txtTotalKunjungan"
+                                            android:text="-"
+                                            android:textColor="@color/red"
+                                            android:textSize = "@dimen/space_12"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+                                    </LinearLayout>
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:background="@color/grey_s"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_2"/>
+    </LinearLayout>
+
+</RelativeLayout>

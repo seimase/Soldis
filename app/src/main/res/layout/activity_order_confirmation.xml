@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/grey_s"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:visibility="gone"
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar_master"/>
+
+
+    <RelativeLayout
+        android:id="@+id/layout_contract_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space_10"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/layout_back"
+                android:layout_width="@dimen/space_40"
+                android:layout_height="@dimen/space_40"
+                android:background="@drawable/selector_row_transparant"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="@dimen/space_25"
+                    android:layout_height="@dimen/space_25"
+                    android:src="@drawable/ic_arrow_back"
+                    android:tint="@color/black" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="fill"
+                android:layout_weight="1">
+
+                <ui.CustomtextView
+                    android:layout_marginLeft="@dimen/space_5"
+                    font:name = "Helvetica_Bold"
+                    android:textSize="@dimen/space_18"
+                    android:gravity="fill"
+                    android:textColor="@color/colorBlackEP"
+                    android:text="Konfirmasi Order"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ui.CustomtextView
+                        android:layout_marginLeft="@dimen/space_5"
+                        font:name = "Helvetica_Book"
+                        android:textSize="@dimen/space_12"
+                        android:textColor="@color/colorBlackEP"
+                        android:text="Order : "
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"/>
+
+                    <ui.CustomtextView
+                        font:name = "Helvetica_Medium"
+                        android:textColor="@color/blue2"
+                        android:id="@+id/text_orderno"
+                        android:text="Order Number"
+                        android:textSize="@dimen/space_12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/layout_tgl"
+                android:background="@drawable/selector_row_transparant"
+                android:layout_width="@dimen/space_100"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/logo_soldis" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:background="@color/grey_s"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:background="@color/colorBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/space_14"
+                android:background="@color/transparant_pure"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/space_10">
+
+                    <ui.CircleImageView
+                        android:id="@+id/img_avatar"
+                        android:src="@drawable/avatar"
+                        android:layout_width="@dimen/space_60"
+                        android:layout_height="@dimen/space_60" />
+                </RelativeLayout>
+
+                <ui.CustomtextView
+                    font:name = "Helvetica_Medium"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/space_14"
+                    android:text="Nama Outlet"
+                    android:id="@+id/text_nama_toko"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <ui.CustomtextView
+                    font:name = "Helvetica_light"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/space_12"
+                    android:singleLine="true"
+                    android:id="@+id/text_alamat"
+                    android:text="Alamat Outlet"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <ui.CustomtextView
+                    font:name = "Helvetica_Book"
+                    android:textSize="@dimen/space_12"
+                    android:singleLine="true"
+                    android:id="@+id/text_tgl"
+                    android:text="Tanggal transaksi : "
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@color/transparant_pure"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <android.support.v7.widget.CardView
+                android:visibility="gone"
+                android:paddingTop="@dimen/space_7"
+                android:paddingBottom="@dimen/space_7"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:layout_marginTop="@dimen/space_14"
+                android:layout_marginLeft="@dimen/space_40"
+                android:layout_marginRight="@dimen/space_40"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_50">
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/space_7"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_marginLeft="@dimen/space_14"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ui.CustomtextView
+                            font:name = "Header_Reguler"
+                            android:textColor="@color/black"
+                            android:text="Order Number"
+                            android:textSize="@dimen/space_12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_marginTop="@dimen/space_5"
+                        android:layout_marginBottom="@dimen/space_14"
+                        android:background="@color/grey_s"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"/>
+
+                    <LinearLayout
+                        android:layout_marginLeft="@dimen/space_14"
+                        android:layout_marginRight="@dimen/space_14"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ui.CustomtextView
+                            font:name = "Header_Reguler"
+                            android:textColor="@color/black"
+                            android:text="Total SKU"
+                            android:textSize="@dimen/space_12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <ui.CustomtextView
+                            font:name = "Header"
+                            font:type = "bold"
+                            android:textColor="@color/blue2"
+                            android:id="@+id/txtTotalSKU"
+                            android:text="SKU"
+                            android:textSize="@dimen/space_12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:paddingTop="@dimen/space_7"
+                android:paddingBottom="@dimen/space_7"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:layout_marginTop="@dimen/space_14"
+                android:layout_marginLeft="@dimen/space_40"
+                android:layout_marginRight="@dimen/space_40"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/space_5"
+                    android:layout_marginBottom="@dimen/space_5"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+
+                    <LinearLayout
+                        android:layout_marginLeft="@dimen/space_14"
+                        android:layout_marginRight="@dimen/space_14"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ui.CustomtextView
+                            font:name = "Header_Reguler"
+                            android:textColor="@color/black"
+                            android:text="Nomor Meja"
+                            android:textSize="@dimen/space_12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <ui.CustomEditText
+                            font:name = "Header"
+                            font:type = "bold"
+                            android:textColor="@color/blue2"
+                            android:id="@+id/txtRemark"
+                            android:hint="Nomor Meja"
+                            android:textSize="@dimen/space_12"
+                            android:numeric="integer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="@dimen/space_14"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:cardCornerRadius="@dimen/space_14"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ui.CustomtextView
+                                android:paddingTop="@dimen/space_14"
+                                android:paddingBottom="@dimen/space_14"
+                                android:paddingLeft="@dimen/space_14"
+                                font:name = "Helvetica_Medium"
+                                android:text="Item Orders"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/space_14"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:visibility="gone"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ui.CustomtextView
+                                android:paddingTop="@dimen/space_14"
+                                android:paddingBottom="@dimen/space_14"
+                                font:name = "GOTHAM_MEDIUM"
+                                android:text="Total : "
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/space_14"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <ui.CustomtextView
+                                font:name = "GOTHAM_BOLD"
+                                android:text="-"
+                                android:textColor="@color/red_deep"
+                                android:textSize="@dimen/space_14"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <View
+                        android:background="@color/colorLineBar"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/my_recyclerview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentTop="true"
+                        android:layout_weight="1"/>
+
+                    <View
+                        android:background="@color/colorLineBar"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+
+                    <ui.CustomtextView
+                        android:id="@+id/txtAddMoreItems"
+                        android:background="@drawable/selector_row_new"
+                        android:gravity="center"
+                        android:padding="@dimen/space_14"
+                        font:name = "GOTHAM_MEDIUM"
+                        android:text="+ ADD MORE ITEMS"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/space_14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+
+            <LinearLayout
+                android:paddingTop="@dimen/space_20"
+                android:paddingBottom="@dimen/space_20"
+                android:paddingLeft="@dimen/space_14"
+                android:paddingRight="@dimen/space_14"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ui.CustomtextView
+                    font:name = "Header"
+                    font:type = "bold"
+                    android:text="TOTAL"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/space_14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+                <ui.CustomtextView
+                    android:id="@+id/txtTotalPrice"
+                    android:gravity="right"
+                    font:name = "Label"
+                    font:type = "bold"
+                    android:text="Rp 0"
+                    android:textSize="@dimen/space_14"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+            <ui.CustomtextView
+                android:id="@+id/txtSave"
+                android:background="@color/colorBar"
+                font:name = "Helvetica_Book"
+                android:gravity="center"
+                android:padding="@dimen/space_14"
+                android:textSize="@dimen/space_18"
+                android:textColor="@color/white"
+                android:text="Bayar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

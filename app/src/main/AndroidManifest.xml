@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.soldis.yourthaitea">
+
+    <supports-screens android:smallScreens="false" />
+
+    <compatible-screens>
+
+        <!-- normal size screens -->
+        <screen
+            android:screenDensity="hdpi"
+            android:screenSize="normal" />
+        <screen
+            android:screenDensity="xhdpi"
+            android:screenSize="normal" />
+        <screen
+            android:screenDensity="480"
+            android:screenSize="normal" />
+        <screen
+            android:screenDensity="560"
+            android:screenSize="normal" />
+        <screen
+            android:screenDensity="640"
+            android:screenSize="normal" />
+
+        <!-- large size screens -->
+        <screen
+            android:screenDensity="hdpi"
+            android:screenSize="large" />
+        <screen
+            android:screenDensity="xhdpi"
+            android:screenSize="large" />
+        <screen
+            android:screenDensity="480"
+            android:screenSize="large" />
+        <screen
+            android:screenDensity="560"
+            android:screenSize="large" />
+        <screen
+            android:screenDensity="640"
+            android:screenSize="large" />
+        <screen
+            android:screenDensity="420"
+            android:screenSize="normal" />
+    </compatible-screens>
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+
+
+    <application
+        android:name="com.soldis.yourthaitea.AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/logo_sd"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        tools:ignore="AllowBackup,GoogleAppIndexingWarning">
+        <activity android:name=".SplashScreenActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Goolge API Key -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyC5vevb1Uh44oI_diHjinfpXjsF_akP7AQ" />
+
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="520e8b28b13b5896be0eb1b4d1c4a24bc5965584"
+            />
+
+
+        <service
+            android:name="fcm.MyAndroidFirebaseMsgService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="fcm.MyAndroidFirebaseInstanceIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+
+
+        <service android:name="com.soldis.yourthaitea.service.ServiceAutoSend"/>
+        <service android:name="com.soldis.yourthaitea.service.ServiceAutoLogOut"/>
+        <service android:name="com.soldis.yourthaitea.service.ServiceGPSTracker"/>
+        <receiver  android:enabled="true" android:name="com.soldis.yourthaitea.service.AlarmReceiver"/>
+        <receiver  android:enabled="true" android:name="com.soldis.yourthaitea.service.AlarmReceiverAutoLogout"/>
+        <receiver  android:enabled="true" android:name="com.soldis.yourthaitea.service.AlarmReceiverGPS"/>
+
+        <activity android:name=".LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <activity android:name=".PinViewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <activity android:name="com.soldis.yourthaitea.MainLeaderActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <activity android:name="com.soldis.yourthaitea.MainSalesActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <activity android:name="com.soldis.yourthaitea.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <activity android:name="com.soldis.yourthaitea.MainAdminActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <activity android:name=".master.MasterDataActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <activity android:name=".printer.DeviceListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MyDialog"/>
+
+        <activity android:name=".master.MasterOutletActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <activity android:name="com.soldis.yourthaitea.transaction.DailySalesmanActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <activity android:name="com.soldis.yourthaitea.transaction.pembelian.PembelianActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <activity android:name=".transaction.CustcardActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+
+        <activity android:name="com.soldis.yourthaitea.transaction.taking_order.InputProductActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <activity android:name=".transaction.taking_order.OrderConfirmationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <activity android:name=".transaction.taking_order.OrderPaymentActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <activity android:name=".transaction.taking_order.ViewOrderActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <activity android:name=".transaction.taking_order.OrderPaymentSuccessActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <activity android:name=".transaction.maintenance.DispenserConfirmationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <activity android:name=".transaction.collection.CollectionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <activity android:name=".transaction.complaint.ComplainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <activity android:name=".transaction.maintenance.MaintenanceActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <activity android:name=".dashboard.ViewProductActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <activity android:name="com.soldis.yourthaitea.stock.InputStockActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <activity android:name="com.soldis.yourthaitea.stock.ListStockActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <activity android:name="com.soldis.yourthaitea.ProfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <activity android:name="com.soldis.yourthaitea.dashboard.DashboardActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <activity android:name="com.soldis.yourthaitea.dashboard.SummaryOutletActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <activity android:name="com.soldis.yourthaitea.TimeVisitActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <activity android:name="com.soldis.yourthaitea.SettingsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <activity android:name=".master.AddOutletPreRegActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <activity android:name=".master.AddOutletRegActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <activity android:name=".master.AddProductActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <activity android:name="com.soldis.yourthaitea.transaction.DialogSortBy"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MyDialog"/>
+
+        <activity android:name=".master.DialogPerioderOrder"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MyDialog"/>
+
+        <activity android:name="com.soldis.yourthaitea.transaction.ListKelurahan"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MyDialog"/>
+
+        <activity android:name="com.soldis.yourthaitea.transaction.ListTypeout"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MyDialog"/>
+
+        <activity android:name=".master.ListGroupClassification"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MyDialog"/>
+
+        <activity android:name=".master.ListCategory"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MyDialog"/>
+
+        <activity android:name=".master.DialogPaymentType"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MyDialog"/>
+
+        <activity android:name="com.soldis.yourthaitea.dashboard.ListDashboard"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MyDialog"/>
+
+        <activity android:name="com.soldis.yourthaitea.journey.JourneyActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <activity android:name="com.soldis.yourthaitea.DownloadActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MyDialog"/>
+
+        <!--Team Leader -->
+        <activity android:name="com.soldis.yourthaitea.dashboard.DashboardLeaderSummaryXLSActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <activity android:name="com.soldis.yourthaitea.dashboard.summary_sales.DashboardSummarySalesBySalesman"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <activity android:name="com.soldis.yourthaitea.dashboard.summary_sales.DashboardSummarySalesByOutlet"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <activity android:name="com.soldis.yourthaitea.dashboard.ListDashboardProductActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <activity android:name=".transaction.taking_order.ListOrderActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <activity android:name=".master.OutletActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <activity android:name=".dashboard.DashboardPresenceSummaryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <activity android:name=".dashboard.bot.Dashboard_Zone_SummaryPresence_Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <activity android:name=".dashboard.asm.Dashboard_ASM_SummaryPresenceActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <activity android:name=".dashboard.data_outlet.Dashboard_Zone_Outlet_Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <activity android:name=".dashboard.data_outlet.Dashboard_ASM_OutletActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <activity android:name=".dashboard.data_outlet.DashboardDataOutletActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <!--ASM -->
+        <activity android:name="com.soldis.yourthaitea.dashboard.asm.Dashboard_ASM_Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <activity android:name="com.soldis.yourthaitea.dashboard.asm.Dashboard_ASM_SummaryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <!--BOT-->
+        <activity android:name="com.soldis.yourthaitea.dashboard.bot.Dashboard_Zone_Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <activity android:name="com.soldis.yourthaitea.dashboard.bot.Dashboard_Zone_Summary_Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <activity android:name=".admin.AdminActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+
+        <activity android:name=".dashboard.summary_sales.DashboardSummarySalesByDepo"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <!-- Admin-->
+
+        <activity android:name=".admin.absensi.Admin_AbsensiActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <activity android:name=".admin.stock.AdminListStockActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <activity android:name=".admin.ringkasan.RingkasanActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+    </application>
+
+</manifest>

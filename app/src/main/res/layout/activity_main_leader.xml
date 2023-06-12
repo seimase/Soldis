@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:CircleIndicator="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/tools"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar_add"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/layout_menu"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/container_footer">
+
+            <LinearLayout
+                android:id="@+id/main_header_container_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/container_footer"
+                android:orientation="vertical"
+                android:layout_weight="2">
+
+                <ImageView
+                    android:id="@+id/image_banner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_homebanner"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/coordinat"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:visibility="gone"
+                        android:id="@+id/layout_adapter"
+                        android:padding="@dimen/space_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <android.support.v4.view.ViewPager
+                            android:id="@+id/main_header_viewpager"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/space_225"
+                            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+                        <ui.widget.CircleIndicator
+                            android:id="@+id/indicator"
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:layout_alignBottom="@id/main_header_viewpager"
+                            CircleIndicator:ci_background="@color/grey_dark"
+                            CircleIndicator:ci_gravity="center"
+                            CircleIndicator:ci_margin="7dp"
+                            CircleIndicator:ci_mode="outside"
+                            CircleIndicator:ci_radius="4dp"
+                            CircleIndicator:ci_selected_background="@android:color/white" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_loading"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ProgressBar
+                            android:progressTint="@color/colorSearch"
+                            android:layout_width="@dimen/space_35"
+                            android:layout_height="@dimen/space_35" />
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:id="@+id/layout_sync"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ui.CustomtextView
+                            font:name = "GOTHAM_BOOK"
+                            android:text="@string/text_data_not_found"
+                            android:textSize="@dimen/space_12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <ui.CustomtextView
+                            android:layout_marginTop="@dimen/space_7"
+                            font:name = "GOTHAM_BOOK"
+                            android:id="@+id/txtSync"
+                            android:text="@string/text_refresh"
+                            android:textSize="@dimen/space_12"
+                            android:textColor="@color/white"
+                            android:background="@drawable/btn_shape_all_blue_search"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <View
+                    android:background="@color/grey_s"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_5"/>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <View
+                        android:background="@color/grey_s"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space_5"/>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <View
+                            android:background="@color/grey_s"
+                            android:layout_width="@dimen/space_5"
+                            android:layout_height="match_parent"/>
+
+                        <LinearLayout
+                            android:id="@+id/layout_main_ringkasan_motoris"
+                            android:orientation="vertical"
+                            android:background="@drawable/selector_row"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:clickable="false"
+                                android:orientation="vertical"
+                                android:layout_weight="1" >
+
+                                <ImageView
+                                    android:tint="@color/dark_pink"
+                                    android:padding="@dimen/space_14"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:contentDescription="@string/app_name"
+                                    android:clickable="false"
+                                    android:gravity="center"
+                                    android:src="@drawable/icon_directory"/>
+
+                            </LinearLayout>
+
+                            <ui.CustomtextView
+                                android:gravity="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/main_motorist"
+                                android:textSize="@dimen/space_10"
+                                font:name="Label"
+                                font:type="bold"/>
+                            <RelativeLayout
+                                android:background="@drawable/btn_shape_kotak_pink"
+                                android:layout_margin="@dimen/space_10"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/space_28">
+
+                                <ui.CustomtextView
+                                    android:gravity="center"
+                                    font:name = "GOTHAM_BLACK"
+                                    android:textColor="@color/dark_pink"
+                                    android:textSize="@dimen/space_14"
+                                    android:text="@string/main_view"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    />
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+                        <View
+                            android:background="@color/grey_s"
+                            android:layout_width="@dimen/space_5"
+                            android:layout_height="match_parent"/>
+                        <LinearLayout
+                            android:id="@+id/layout_main_ringkasan_penjualan"
+                            android:orientation="vertical"
+                            android:background="@drawable/selector_row"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:clickable="false"
+                                android:orientation="vertical"
+                                android:layout_weight="1" >
+
+                                <ImageView
+                                    android:padding="@dimen/space_14"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:contentDescription="@string/app_name"
+                                    android:clickable="false"
+                                    android:gravity="center"
+                                    android:tint="@color/green"
+                                    android:src="@drawable/icon_directory"/>
+
+                            </LinearLayout>
+
+                            <ui.CustomtextView
+                                android:gravity="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/main_dashboard"
+                                android:textSize="@dimen/space_10"
+                                font:name="Label"
+                                font:type="bold"/>
+
+                            <RelativeLayout
+                                android:background="@drawable/btn_shape_kotak_green"
+                                android:layout_margin="@dimen/space_10"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/space_28">
+
+                                <ui.CustomtextView
+                                    android:gravity="center"
+                                    font:name = "GOTHAM_BLACK"
+                                    android:textColor="@color/colorBar_Green"
+                                    android:textSize="@dimen/space_14"
+                                    android:text="@string/main_view"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    />
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <View
+                            android:background="@color/grey_s"
+                            android:layout_width="@dimen/space_5"
+                            android:layout_height="match_parent"/>
+                    </LinearLayout>
+
+                    <View
+                        android:background="@color/grey_s"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space_5"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="@dimen/space_5"
+                            android:layout_height="match_parent"
+                            android:background="@color/grey_s" />
+
+                        <LinearLayout
+                            android:id="@+id/layout_main_ringkasan_absensi"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/selector_row"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:clickable="false"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:clickable="false"
+                                    android:contentDescription="@string/app_name"
+                                    android:gravity="center"
+                                    android:padding="@dimen/space_5"
+                                    android:src="@drawable/calender_absen"
+                                    android:tint="@color/darkorange" />
+
+                            </LinearLayout>
+
+                            <ui.CustomtextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="@string/main_presence"
+                                android:textSize="@dimen/space_10"
+                                font:name="Label"
+                                font:type="bold" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/space_28"
+                                android:layout_margin="@dimen/space_10"
+                                android:background="@drawable/btn_shape_kotak_darkorange">
+
+                                <ui.CustomtextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text="@string/main_view"
+                                    android:textColor="@color/darkorange"
+                                    android:textSize="@dimen/space_14"
+                                    font:name="GOTHAM_BLACK" />
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="@dimen/space_5"
+                            android:layout_height="match_parent"
+                            android:background="@color/grey_s" />
+
+                        <LinearLayout
+                            android:id="@+id/layout_main_outlet"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/selector_row"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:clickable="false"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:clickable="false"
+                                    android:contentDescription="@string/app_name"
+                                    android:gravity="center"
+                                    android:padding="@dimen/space_14"
+                                    android:src="@drawable/icon_directory"
+                                    android:tint="@color/purple" />
+
+                            </LinearLayout>
+
+                            <ui.CustomtextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="@string/master_outlet"
+                                android:textSize="@dimen/space_10"
+                                font:name="Label"
+                                font:type="bold" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/space_28"
+                                android:layout_margin="@dimen/space_10"
+                                android:background="@drawable/btn_shape_kotak_purple">
+
+                                <ui.CustomtextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text="@string/main_view"
+                                    android:textColor="@color/purple"
+                                    android:textSize="@dimen/space_14"
+                                    font:name="GOTHAM_BLACK" />
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="@dimen/space_5"
+                            android:layout_height="match_parent"
+                            android:background="@color/grey_s" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:background="@color/grey_s"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space_5"/>
+
+
+                </LinearLayout>
+
+                <View
+                    android:background="@color/grey_s"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_5"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/container_footer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/green"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="@dimen/space_8">
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ui.CustomtextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="@string/text_contact_us"
+                    android:textColor="@color/white"
+                    android:textColorLink="@color/white"
+                    android:textSize="@dimen/space_10"
+                    font:name="Label" />
+
+                <ui.CustomtextView
+                    android:id="@+id/txtEmail"
+                    android:layout_marginLeft="@dimen/space_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:autoLink="email"
+                    android:textColor="@color/white"
+                    android:textColorLink="@color/white"
+                    android:textSize="@dimen/space_10"
+                    font:name="Label" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ui.CustomtextView
+                    android:id="@+id/txtPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/white"
+                    android:textColorLink="@color/white"
+                    android:textSize="@dimen/space_10"
+                    android:textStyle="bold"
+                    font:name="Label" />
+
+                <ui.CustomtextView
+                    android:layout_marginLeft="@dimen/space_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/text_contact"
+                    android:textColor="@color/white"
+                    android:textColorLink="@color/white"
+                    android:textSize="@dimen/space_10"
+                    font:name="Label" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,138 @@
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/btn_shape_purple">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/transparant_pure"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_margin="@dimen/space_14"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/logo_soldis"
+                android:layout_width="@dimen/space_100"
+                android:layout_height="@dimen/space_30" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_setting"
+                android:background="@drawable/selector_row_transparant"
+                android:gravity="center"
+                android:layout_width="@dimen/space_40"
+                android:layout_height="@dimen/space_40">
+
+                <ImageView
+                    android:src="@drawable/uff_setting"
+                    android:tint="@color/white"
+                    android:layout_width="@dimen/space_20"
+                    android:layout_height="@dimen/space_20" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ui.CircleImageView
+                    android:layout_marginTop="@dimen/space_70"
+                    android:id="@+id/img_avatar"
+                    android:src="@drawable/avatar"
+                    android:layout_width="@dimen/space_90"
+                    android:layout_height="@dimen/space_90"    />
+            </RelativeLayout>
+
+            <ui.CustomtextView
+                android:layout_marginTop="@dimen/space_7"
+                font:name = "Helvetica_Book"
+                android:id="@+id/txtSlsno"
+                android:text="Cabang"
+                android:textSize="@dimen/space_12"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <ui.CustomtextView
+                font:name = "Helvetica_Medium"
+                android:id="@+id/txtName"
+                android:text="Name Salesman"
+                android:textSize="@dimen/space_16"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <ui.CustomtextView
+                font:name = "Helvetica_Book"
+                android:id="@+id/txtAddress"
+                android:text="Cabang"
+                android:textSize="@dimen/space_14"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <ui.CustomtextView
+                android:visibility="gone"
+                font:name = "Header"
+                android:text="Name Salesman"
+                android:textSize="@dimen/space_16"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="10dp"
+        android:paddingLeft="@dimen/space_30"
+        android:paddingRight="@dimen/space_30"
+        android:layout_weight="1">
+
+        <com.kevalpatel.passcodeview.PinView
+            android:id="@+id/pattern_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:dividerColor="@color/colorBar"
+            app:fingerprintDefaultText="Scan your finger to unlock application"
+            app:fingerprintEnable="true"
+            app:fingerprintTextColor="@color/colorBar"
+            app:fingerprintTextSize="@dimen/space_14"
+            app:giveTactileFeedback="true"
+            app:titleTextColor="@android:color/black"/>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

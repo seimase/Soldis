@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/layout_row"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="@dimen/space_60"
+            android:layout_height="match_parent">
+
+            <ui.CustomtextView
+                android:gravity="center"
+                font:name = "GOTHAM_MEDIUM"
+                android:id="@+id/txtNo"
+                android:textSize="@dimen/space_16"
+                android:text="1"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginRight="@dimen/space_14"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/space_5"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ui.CustomtextView
+                            font:name = "GOTHAM_BOOK"
+                            android:textSize="@dimen/space_12"
+                            android:text="@string/tv_date_start"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <ui.CustomtextView
+                            font:name = "GOTHAM_MEDIUM"
+                            android:id="@+id/txtTglPergi"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/space_12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_marginTop="@dimen/space_5"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ui.CustomtextView
+                            android:gravity="right"
+                            font:name = "GOTHAM_BOOK"
+                            android:textSize="@dimen/space_12"
+                            android:text="@string/tv_date_end"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <ui.CustomtextView
+                            android:gravity="right"
+                            font:name = "GOTHAM_MEDIUM"
+                            android:id="@+id/txtTglPulang"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/space_12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_marginLeft="@dimen/space_70"
+                    android:layout_marginRight="@dimen/space_70"
+                    android:layout_marginTop="@dimen/space_5"
+                    android:src="@drawable/kehadiran_arrow"
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ui.CustomtextView
+                            font:name = "GOTHAM_BOOK"
+                            android:textSize="@dimen/space_12"
+                            android:text="@string/tv_time_start"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"/>
+
+                        <ui.CustomtextView
+                            font:name = "GOTHAM_MEDIUM"
+                            android:id="@+id/txtWaktuPergi"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/space_12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ui.CustomtextView
+                            android:gravity="right"
+                            font:name = "GOTHAM_BOOK"
+                            android:textSize="@dimen/space_12"
+                            android:text="@string/tv_time_end"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <ui.CustomtextView
+                            android:gravity="right"
+                            font:name = "GOTHAM_MEDIUM"
+                            android:id="@+id/txtWaktuPulang"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/space_12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+                <View
+                    android:layout_marginTop="@dimen/space_5"
+                    android:background="@color/grey_s"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</RelativeLayout>

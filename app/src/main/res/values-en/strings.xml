@@ -1,0 +1,249 @@
+<resources>
+    <string name="app_name">Soldis POS</string>
+    <string name="title_activity_login">Login</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <string name="drawer_open">Slider Menu Opened</string>
+    <string name="drawer_close">Slider Menu Closed</string>
+
+    <!--MainMenu-->
+    <string name="penghargaan">Penghargaan &amp; Hukuman</string>
+    <string name="informasi_pemohon">Informasi &amp; Kontak Pemohon</string>
+    <string name="informasi_lokasi_dan_pemohon">Lokasi Yand Diminta &amp; Informasi Pemohon</string>
+    <string name="informasi_pembayaran_dan_pemohon">Informasi Pemohon &amp; Pembayaran</string>
+    <string name="text_form"><u>FORM</u></string>
+
+
+    <string name="text_contact_us">Contact us at</string>
+    <string name="text_contact">(Whatsapp/SMS)</string>
+    <string name="locale">english</string>
+    <string name="text_login">Login</string>
+    <string name="text_no_connection">No internet connection</string>
+    <string name="text_incorrect_userpass">Incorrect username or password</string>
+    <string name="text_user_id">User Id</string>
+    <string name="text_password">Password</string>
+    <string name="text_branch">Mitra ID</string>
+    <string name="text_checking_data">Checking data</string>
+    <string name="text_confirmation">Confirmation</string>
+    <string name="text_gps_is_off">GPS is off</string>
+    <string name="text_gps_not_locked">GPS has not been locked</string>
+    <string name="text_data_saved">Data Save</string>
+    <string name="text_data_not_found">Data not found</string>
+    <string name="text_refresh">Refresh</string>
+
+    <!--Login-->
+    <string name="login_used_motoris">Salesman ID is already used by other devices, please contact Team Support SFA</string>
+    <string name="login_update_data">Update data</string>
+
+    <!--MainMenu-->
+    <string name="main_wa_not_installed">The WhatsApp app is not installed</string>
+    <string name="main_logout">You have been logged out</string>
+    <string name="main_mytransaction">My Transaction</string>
+    <string name="main_home">Home</string>
+    <string name="main_dashboard">Summary</string>
+    <string name="main_motorist">AFH Summary</string>
+    <string name="main_time_visit">Time Visit</string>
+    <string name="main_master">Master Data</string>
+    <string name="main_presence">Presence Summary</string>
+    <string name="main_stock">Product Stock</string>
+    <string name="main_daily_salesman">Daily AFH</string>
+    <string name="main_Information">Information</string>
+    <string name="main_Feature">Feature</string>
+    <string name="main_exit">Keluar</string>
+    <string name="main_version">Version</string>
+    <string name="main_chat">Message</string>
+    <string name="main_start">START</string>
+    <string name="main_finish">FINISH</string>
+    <string name="main_view">VIEW</string>
+    <string name="main_input">INPUT</string>
+    <string name="main_my_journey">My Journey</string>
+    <string name="main_trophy">Trophy</string>
+    <string name="main_your_journey">Your Journey</string>
+    <string name="main_your_achievment">Your Achievment</string>
+    <string name="master_product">Product</string>
+    <string name="master_outlet">Outlet</string>
+    <string name="master_data_product">Data Product</string>
+    <string name="master_data_outlet">Data Outlet</string>
+    <string name="master_pre_reg">Prospect</string>
+    <string name="master_register">Register</string>
+    <string name="master_re_registration">Outlet Re-Registration</string>
+    <string name="master_data_summary">MASTER DATA &amp; SUMMARY</string>
+    <string name="main_activity">ACTIVITY</string>
+
+    <!--Time Visit-->
+    <string name="tv_timevisit">Time Visit</string>
+    <string name="tv_time_start">Time Go</string>
+    <string name="tv_time_end">Time Back</string>
+    <string name="tv_do_you_starvisit">Do you want start visit ?</string>
+    <string name="tv_do_you_endvisit">Do you want end visit ?</string>
+    <string name="tv_sync_start">Initial data sync days</string>
+    <string name="tv_sync_end">Day end data sync</string>
+    <string name="tv_sync_photo">Photo sync</string>
+    <string name="tv_description">Time away is the time where time departs from the office while the time home is the time to arrive back to the office.</string>
+    <string name="tv_latest_information">Latest information</string>
+    <string name="tv_date_start">Date Go</string>
+    <string name="tv_date_end">Date Back</string>
+    <string name="text_no">No</string>
+    <string name="text_yes">Yes</string>
+
+    <!--Setting-->
+    <string name="setting_setting">Settings</string>
+    <string name="setting_sync_data">Synchronize Data</string>
+    <string name="setting_sync_data_product">Sync product data ?</string>
+    <string name="setting_sync_data_outlet">Sync outlet data ?</string>
+    <string name="setting_sync_outlet">Outlet Data</string>
+    <string name="setting_sync_product">Product Data</string>
+    <string name="setting_motoris_profile">AFH Profile</string>
+    <string name="setting_logout">Logout</string>
+    <string name="setting_logout_app">Logout from app ?</string>
+    <string name="setting_transaction_not_complete">Transaction not completed</string>
+    <string name="setting_sync_complete">Sync Complete</string>
+    <string name="setting_check_for_update">Check for update</string>
+    <string name="setting_restore">Restore data</string>
+    <string name="setting_token_not_valid">Token not valid</string>
+    <string name="setting_uptodate">Your software is up to date</string>
+
+    <!--Dashboard-->
+    <string name="dash_EC">EC / DAY</string>
+    <string name="dash_CALL">CALL / DAY</string>
+    <string name="dash_target">Target</string>
+    <string name="dash_visit">Visit</string>
+    <string name="dash_strike">Achievment</string>
+    <string name="dash_sales">SALES</string>
+    <string name="dash_sales_label">Sales</string>
+    <string name="dash_stock_today">Stock Today</string>
+    <string name="dash_stock_in">Stok In</string>
+    <string name="dash_stock_out">Stok Out</string>
+    <string name="dash_category">CATEGORY</string>
+    <string name="dash_achievment">ACHIEVMENT</string>
+    <string name="dash_mtd">MTD</string>
+    <string name="dash_days">DAILY</string>
+    <string name="dash_outlet_data">OUTLET DATA</string>
+    <string name="dash_outlet_data_label">Outlet Data</string>
+    <string name="dash_outlet">Outlet</string>
+    <string name="dash_address">Address</string>
+    <string name="dash_date">DATE : </string>
+    <string name="dash_date_label">Date</string>
+    <string name="dash_month_label">Month</string>
+    <string name="dash_product">Product :</string>
+    <string name="dash_sales_data">SALES DATA</string>
+    <string name="dash_sales_data_label">Sales Data</string>
+    <string name="dash_presence">PRESENCE</string>
+    <string name="dash_comes">Comes</string>
+    <string name="dash_number_of_motoris">Number Of AFH</string>
+    <string name="dash_start_date">Start date</string>
+    <string name="dash_end_date">End date</string>
+
+    <string name="dash_residual">Sisa</string>
+    <string name="dash_date_is">Date</string>
+    <string name="dash_visit_plan">Visit Plan</string>
+    <string name="dash_not_visit">Not Visit</string>
+    <string name="dash_strike_plan">Strike Plan</string>
+    <string name="dash_not_strike">Not Strike</string>
+    <string name="dash_export_to_excel">Export to excel ?</string>
+    <string name="dash_no_application_excel">No Application available to viewExcel</string>
+    <string name="dash_not_complete">Not Complete</string>
+    <!--Profile-->
+    <string name="profile_id_leader">Leader ID</string>
+    <string name="profile_leader_name">Leader Name</string>
+    <string name="profile_id_motoris">AFH ID</string>
+    <string name="profile_motoris_name">AFH Name</string>
+    <string name="profile_level">Level</string>
+    <string name="profile_tipe">Type</string>
+    <string name="profile_address">Address</string>
+    <string name="profile_city">City</string>
+    <string name="profile_transaction_date">Transaction Date</string>
+
+    <!--Stock-->
+    <string name="stock_input_stock">Input Stock</string>
+    <string name="stock_product_data">PRODUCT DATA</string>
+    <string name="stock_product_name">Product Name</string>
+    <string name="stock_price">Price</string>
+    <string name="stock_saved">Data saved ?</string>
+    <string name="stock_hasben_saved">Data has been saved</string>
+    <string name="stock_stock">Stock</string>
+    <string name="stock_stock_value">Stock Value</string>
+
+    <!--Daily Motoris-->
+    <string name="daily_motoris">Daily AFH</string>
+    <string name="daily_search_outlet">Search Outlet</string>
+    <string name="daily_total_visits">Total Visits</string>
+    <string name="daily_keyword">Keyword</string>
+    <string name="daily_village">Village</string>
+    <string name="daily_branch">Number of Branches</string>
+    <string name="daily_cancel">CANCEL</string>
+    <string name="daily_search">SEARCH</string>
+    <string name="daily_all">All</string>
+    <string name="daily_back">BACK</string>
+    <string name="daily_select_village">SELECT VILLAGE</string>
+    <string name="daily_ktp_name">KTP Name</string>
+    <string name="daily_ktp_address">KTP Address</string>
+    <string name="daily_ktp_no">KTP No</string>
+    <string name="daily_npwp_name">NPWP Name</string>
+    <string name="daily_npwp_address">NPWP Address</string>
+    <string name="daily_npwp_no">NPWP No</string>
+    <string name="daily_outlet_name">Outlet</string>
+    <string name="daily_owner">Owner</string>
+    <string name="daily_company_name">Company Name</string>
+    <string name="daily_classification">Classification</string>
+    <string name="daily_address">Address</string>
+    <string name="daily_save">Save</string>
+    <string name="daily_add">Add</string>
+    <string name="daily_process">Process</string>
+    <string name="daily_sales_input">Sales Input</string>
+    <string name="daily_product_not_selected">The product has not been selected</string>
+    <string name="daily_data_in_process">Data in process ?</string>
+    <string name="daily_not_so_transaction">Not transaction ?</string>
+    <string name="daily_data_hasbeen_process">Data has been processed</string>
+    <string name="daily_cant_add">Can not add, process data first</string>
+    <string name="daily_no_data_for_process">No data to process</string>
+    <string name="daily_sortby">SORT BY</string>
+    <string name="daily_transaction">Transaction</string>
+    <string name="daily_no_transaction">No transaction</string>
+    <string name="daily_visit_to">Visit to</string>
+    <string name="daily_ec">EC</string>
+    <string name="daily_call">CALL</string>
+    <string name="daily_sales">SALES</string>
+    <string name="daily_date_of_next_visit">Daily date of next visit</string>
+    <string name="daily_payment_type">Order Type</string>
+    <string name="daily_order_periode">Order Period</string>
+    <string name="daily_contract_status">Contract Status</string>
+    <string name="daily_complete_visit">Finished visit ?</string>
+    <string name="daily_complete">Complete</string>
+
+    <!--AddOutlet-->
+    <string name="addoutlet_outlet_name_must_be_filled">Outlet name must be filled</string>
+    <string name="addoutlet_company_name_must_be_filled">Company name must be filled</string>
+    <string name="addoutlet_owner_must_be_filled">Owner must be filled</string>
+    <string name="addoutlet_classification_must_be_filled">Classification must be filled</string>
+    <string name="addoutlet_branch_must_be_filled">Branch must be filled</string>
+    <string name="addoutlet_next_visit_must_be_filled">Next visit must be filled</string>
+    <string name="addoutlet_take_photo">Please take front photo!</string>
+    <string name="addoutlet_front">Front</string>
+    <string name="addoutlet_side">Side</string>
+    <string name="addoutlet_required">Required/input</string>
+    <string name="addoutlet_error_sistem">There is a system error, please restart the application</string>
+    <string name="addoutlet_KTPNPWP_must_be_filled">KTP/NPWP must be filled</string>
+    <string name="addoutlet_KTP_NO_must_be_filled">KTP No must be filled</string>
+    <string name="addoutlet_KTP_Name_must_be_filled">KTP Name must be filled</string>
+    <string name="addoutlet_KTP_Address_must_be_filled">KTP Address must be filled</string>
+    <string name="addoutlet_NPWP_NO_must_be_filled">NPWP No must be filled</string>
+    <string name="addoutlet_NPWP_Name_must_be_filled">NPWP Name must be filled</string>
+    <string name="addoutlet_NPWP_Address_must_be_filled">NPWP Address must be filled</string>
+    <string name="addoutlet_paymenttype_must_be_filled">Paymnet type must be filled</string>
+    <string name="addoutlet_periodeorder_must_be_filled">Order period must be filled</string>
+    <string name="addoutlet_start_contract_must_be_filled">Contrat start date must be filled</string>
+    <string name="addoutlet_end_contract_must_be_filled">Contract end date must be filled</string>
+</resources>

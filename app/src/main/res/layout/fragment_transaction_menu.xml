@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/grey_s"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/layout_menu"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/space_5"
+        android:layout_marginRight="@dimen/space_25"
+        android:layout_marginLeft="@dimen/space_25"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="@dimen/space_10"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_140"
+                android:layout_weight="1"
+                app:cardCornerRadius="@dimen/space_20"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:background="@drawable/selector_row"
+                    android:id="@+id/layout_to"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:src="@drawable/icon_daily_salesman"
+                            android:padding="@dimen/space_10"
+                            android:tint="@color/white"
+                            android:background="@drawable/bg_circle_purple"
+                            android:layout_width="64dp"
+                            android:layout_height="64dp" />
+                    </LinearLayout>
+
+                    <ui.CustomtextView
+                        android:gravity="center"
+                        android:layout_marginTop="@dimen/space_10"
+                        font:name = "Helvetica_Book"
+                        android:textColor="@color/black"
+                        android:text="Order"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="@dimen/space_10"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_140"
+                android:layout_weight="1"
+                app:cardCornerRadius="@dimen/space_20"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:background="@drawable/selector_row"
+                    android:id="@+id/layout_collection"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:src="@drawable/bill"
+                            android:padding="@dimen/space_10"
+                            android:tint="@color/white"
+                            android:background="@drawable/bg_circle_green"
+                            android:layout_width="64dp"
+                            android:layout_height="64dp" />
+                    </LinearLayout>
+
+                    <ui.CustomtextView
+                        android:gravity="center"
+                        android:layout_marginTop="@dimen/space_10"
+                        font:name = "Helvetica_Book"
+                        android:textColor="@color/black"
+                        android:text="Penagihan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="@dimen/space_10"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_140"
+                android:layout_weight="1"
+                app:cardCornerRadius="@dimen/space_20"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:background="@drawable/selector_row"
+                    android:id="@+id/layout_complain"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:src="@drawable/complaint"
+                            android:padding="@dimen/space_12"
+                            android:tint="@color/white"
+                            android:background="@drawable/bg_circle_red"
+                            android:layout_width="64dp"
+                            android:layout_height="64dp" />
+                    </LinearLayout>
+
+                    <ui.CustomtextView
+                        android:gravity="center"
+                        android:layout_marginTop="@dimen/space_10"
+                        font:name = "Helvetica_Book"
+                        android:textColor="@color/black"
+                        android:text="Komplain"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="@dimen/space_10"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_140"
+                android:layout_weight="1"
+                app:cardCornerRadius="@dimen/space_20"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:background="@drawable/selector_row"
+                    android:id="@+id/layout_maintenance"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:src="@drawable/maintenance"
+                            android:tint="@color/white"
+                            android:padding="@dimen/space_14"
+                            android:background="@drawable/bg_circle_orange"
+                            android:layout_width="64dp"
+                            android:layout_height="64dp" />
+                    </LinearLayout>
+
+                    <ui.CustomtextView
+                        android:gravity="center"
+                        android:layout_marginTop="@dimen/space_10"
+                        font:name = "Helvetica_Book"
+                        android:textColor="@color/black"
+                        android:text="Relasi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

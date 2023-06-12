@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/btn_shape_purple"
+    xmlns:font="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/transparant_pure"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="1">
+
+
+        <ImageView
+            android:id="@+id/circleView"
+            android:src="@drawable/logo_soldis"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_100"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/space_30"
+            android:layout_marginRight="@dimen/space_30"
+            android:layout_marginTop="@dimen/space_45" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:src="@drawable/logo_sd"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_240"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/space_30"
+        android:layout_marginRight="@dimen/space_30"
+        android:layout_marginTop="@dimen/space_45" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ui.CustomtextView
+            android:layout_marginBottom="@dimen/space_5"
+            android:id="@+id/text_version"
+            android:gravity="center"
+
+            font:name="Helvetica_Bold"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/space_16"
+            android:text=""
+            android:textColor="@color/black_ep"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginBottom="@dimen/space_20"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <ui.CustomtextView
+            android:gravity="center"
+            font:name = "GOTHAM_BLACK"
+            android:textColor="@color/black_ep"
+            android:textSize="@dimen/space_30"
+            android:layout_width="match_parent"
+            android:text="SALES FORCE"
+            android:layout_height="wrap_content" />
+        <ui.CustomtextView
+            android:gravity="center"
+            font:name = "GOTHAM_BLACK"
+            android:textColor="@color/black_ep"
+            android:textSize="@dimen/space_30"
+            android:layout_width="match_parent"
+            android:text="AUTOMATION"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    xmlns:CircleIndicator="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <View
+        android:background="@color/grey_s"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_2"/>
+
+    <LinearLayout
+        android:id="@+id/layout_depo"
+        android:background="@drawable/selector_row"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:paddingTop="@dimen/space_7"
+            android:paddingLeft="@dimen/space_14"
+            android:paddingBottom="@dimen/space_7"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ui.CustomtextView
+                        font:name = "Helvetica_Book"
+                        android:text="Depo : "
+                        android:textSize="@dimen/space_12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <ui.CustomtextView
+                        android:layout_marginRight="@dimen/space_10"
+                        font:name = "Helvetica_Medium"
+                        android:textColor="@color/black"
+                        android:id="@+id/txtDepo"
+                        android:text="SURABAYA"
+                        android:textSize="@dimen/space_12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+
+
+                <View
+                    android:layout_marginRight="@dimen/space_14"
+                    android:layout_marginTop="@dimen/space_2"
+                    android:layout_marginBottom="@dimen/space_2"
+                    android:background="@color/grey_s"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+                <LinearLayout
+                    android:layout_marginRight="@dimen/space_14"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:gravity="right"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ui.CustomtextView
+                            font:name = "Helvetica_Book"
+                            android:text="Total Salesman"
+                            android:textSize="@dimen/space_12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <ui.CustomtextView
+                            android:gravity="right"
+                            font:name = "Helvetica_Medium"
+                            android:textColor="@color/black"
+                            android:id="@+id/txtTotalSalesman"
+                            android:text="0"
+                            android:textSize="@dimen/space_12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_marginRight="@dimen/space_10"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ui.CustomtextView
+                            android:gravity="right"
+                            font:name = "Helvetica_Book"
+                            android:text="Total Hadir"
+                            android:textSize="@dimen/space_12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <ui.CustomtextView
+                            android:gravity="right"
+                            font:name = "Helvetica_Medium"
+                            android:textColor="@color/black"
+                            android:id="@+id/txtTotalHadir"
+                            android:text="0"
+                            android:textSize="@dimen/space_12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <ImageView
+                android:id="@+id/img_arrow"
+                android:layout_marginRight="@dimen/space_14"
+                android:src="@drawable/arrow_up"
+                android:layout_width="@dimen/space_20"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:background="@color/grey_s"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:id="@+id/layout_row"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:background="@color/white"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/space_170"
+            android:layout_weight="1" >
+        </android.support.v4.view.ViewPager>
+
+        <ui.widget.CircleIndicator
+            android:layout_marginBottom="@dimen/space_5"
+            android:id="@+id/indicator"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            CircleIndicator:ci_background="@color/grey"
+            CircleIndicator:ci_gravity="center"
+            CircleIndicator:ci_margin="7dp"
+            CircleIndicator:ci_mode="outside"
+            CircleIndicator:ci_radius="4dp"
+            CircleIndicator:ci_selected_background="@color/colorBar" />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

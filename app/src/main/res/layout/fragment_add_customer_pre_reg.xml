@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ui.CustomtextView
+                android:padding="@dimen/space_10"
+                font:name = "GOTHAM_MEDIUM"
+                android:text="@string/dash_outlet_data_label"
+                android:background="@color/grey_s"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/space_14"
+                android:layout_marginLeft="@dimen/space_14"
+                android:layout_marginRight="@dimen/space_14"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ui.CustomtextView
+                        font:name = "GOTHAM_BOOK"
+                        android:textSize="@dimen/space_12"
+                        android:text="@string/daily_outlet_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+
+                <ui.CustomEditText
+                    android:id="@+id/edtNameToko"
+                    android:textColor="@color/black"
+                    android:background="@color/transparant_pure"
+                    android:layout_width="match_parent"
+                    android:maxLines="1"
+                    android:maxLength="50"
+                    android:digits="0123456789AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz "
+                    android:layout_height="wrap_content" />
+                <View
+                    android:background="@color/grey_s"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/space_14"
+                android:layout_marginLeft="@dimen/space_14"
+                android:layout_marginRight="@dimen/space_14"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ui.CustomtextView
+                        font:name = "GOTHAM_BOOK"
+                        android:textSize="@dimen/space_12"
+                        android:text="@string/daily_company_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <ui.CustomEditText
+                    android:id="@+id/edtCompanyName"
+                    android:textColor="@color/black"
+                    android:background="@color/transparant_pure"
+                    android:layout_width="match_parent"
+                    android:digits="0123456789AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz. "
+                    android:maxLines="1"
+                    android:maxLength="100"
+                    android:layout_height="wrap_content" />
+                <View
+                    android:background="@color/grey_s"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/space_14"
+                android:layout_marginLeft="@dimen/space_14"
+                android:layout_marginRight="@dimen/space_14"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ui.CustomtextView
+                    font:name = "GOTHAM_BOOK"
+                    android:textSize="@dimen/space_12"
+                    android:text="@string/daily_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <ui.CustomEditText
+                    android:id="@+id/edtAddress"
+                    android:textColor="@color/black"
+                    android:background="@color/transparant_pure"
+                    android:layout_width="match_parent"
+                    android:maxLines="1"
+                    android:maxLength="200"
+                    android:digits="0123456789AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz. "
+                    android:layout_height="wrap_content" />
+                <View
+                    android:background="@color/grey_s"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/space_14"
+                android:layout_marginLeft="@dimen/space_14"
+                android:layout_marginRight="@dimen/space_14"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ui.CustomtextView
+                    font:name = "GOTHAM_BOOK"
+                    android:textSize="@dimen/space_12"
+                    android:text="Telp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ui.CustomEditText
+                            android:gravity="center"
+                            android:id="@+id/edtPhoneArea"
+                            android:textColor="@color/black"
+                            android:background="@color/transparant_pure"
+                            android:layout_width="@dimen/space_45"
+                            android:phoneNumber="true"
+                            android:maxLength="3"
+                            android:layout_height="wrap_content" />
+                        <View
+                            android:background="@color/grey_s"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginLeft="@dimen/space_14"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ui.CustomEditText
+                            android:id="@+id/edtPhone"
+                            android:textColor="@color/black"
+                            android:background="@color/transparant_pure"
+                            android:layout_width="match_parent"
+                            android:numeric="integer"
+                            android:maxLines="1"
+                            android:maxLength="15"
+                            android:layout_height="wrap_content" />
+                        <View
+                            android:background="@color/grey_s"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/space_14"
+                android:layout_marginLeft="@dimen/space_14"
+                android:layout_marginRight="@dimen/space_14"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ui.CustomtextView
+                    font:name = "GOTHAM_BOOK"
+                    android:textSize="@dimen/space_12"
+                    android:text="@string/daily_village"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <ui.CustomEditText
+                    android:id="@+id/edtKelurahan"
+                    android:textColor="@color/black"
+                    android:background="@color/transparant_pure"
+                    android:digits="0123456789AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz. "
+                    android:layout_width="match_parent"
+                    android:maxLines="1"
+                    android:maxLength="255"
+                    android:layout_height="wrap_content" />
+                <View
+                    android:background="@color/grey_s"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/space_14"
+                android:layout_marginLeft="@dimen/space_14"
+                android:layout_marginRight="@dimen/space_14"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ui.CustomtextView
+                        font:name = "GOTHAM_BOOK"
+                        android:textSize="@dimen/space_12"
+                        android:text="@string/daily_classification"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/space_2"
+                    android:layout_marginBottom="@dimen/space_2"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ui.CustomtextView
+                        android:id="@+id/txtTypeOut"
+                        android:textColor="@color/black"
+                        android:background="@drawable/selector_row"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <View
+                    android:layout_marginTop="@dimen/space_3"
+                    android:background="@color/grey_s"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/space_14"
+                android:layout_marginLeft="@dimen/space_14"
+                android:layout_marginRight="@dimen/space_14"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ui.CustomtextView
+                    font:name = "GOTHAM_BOOK"
+                    android:textSize="@dimen/space_12"
+                    android:text="@string/daily_branch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <ui.CustomEditText
+                    android:id="@+id/edtBranch"
+                    android:textColor="@color/black"
+                    android:background="@color/transparant_pure"
+                    android:layout_width="match_parent"
+                    android:maxLength="4"
+                    android:numeric="integer"
+                    android:layout_height="wrap_content" />
+                <View
+                    android:background="@color/grey_s"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/space_14"
+                android:layout_marginLeft="@dimen/space_14"
+                android:layout_marginRight="@dimen/space_14"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ui.CustomtextView
+                    font:name = "GOTHAM_BOOK"
+                    android:textSize="@dimen/space_12"
+                    android:text="@string/daily_date_of_next_visit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/space_2"
+                    android:layout_marginBottom="@dimen/space_2"
+                    android:id="@+id/layout_tgl"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/calendar"
+                        android:layout_width="@dimen/space_18"
+                        android:layout_height="@dimen/space_18" />
+
+                    <ui.CustomtextView
+                        android:layout_marginLeft="@dimen/space_7"
+                        android:id="@+id/text_tgl"
+                        android:textColor="@color/black"
+                        android:background="@color/transparant_pure"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <View
+                    android:layout_marginTop="@dimen/space_3"
+                    android:background="@color/grey_s"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>

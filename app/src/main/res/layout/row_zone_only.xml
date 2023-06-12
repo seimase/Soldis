@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:font="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:background="@color/white"
+	android:layout_height="match_parent">
+
+	<View
+		android:background="@color/grey_s"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/space_5"/>
+
+	<LinearLayout
+		android:id="@+id/layout_row"
+		android:background="@drawable/selector_row"
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<LinearLayout
+			android:layout_marginTop="@dimen/space_10"
+			android:layout_marginLeft="@dimen/space_14"
+			android:layout_marginBottom="@dimen/space_10"
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1">
+
+			<ui.CustomtextView
+				font:name = "GOTHAM_MEDIUM"
+				android:text="Zone :"
+				android:textSize="@dimen/space_12"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />
+
+			<ui.CustomtextView
+				font:name = "Avenir_Heavy"
+				android:textColor="@color/black"
+				android:id="@+id/txtZoneId"
+				android:text="SURABAYA"
+				android:textSize="@dimen/space_12"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"/>
+
+
+		</LinearLayout>
+
+		<ImageView
+			android:layout_marginRight="@dimen/space_14"
+			android:tint="@color/grey"
+			android:src="@drawable/arrow_forward"
+			android:layout_width="@dimen/space_20"
+			android:layout_height="match_parent" />
+	</LinearLayout>
+
+
+	<View
+		android:background="@color/grey_s"
+		android:layout_width="match_parent"
+		android:layout_height="1dp"/>
+
+
+
+
+
+</LinearLayout>

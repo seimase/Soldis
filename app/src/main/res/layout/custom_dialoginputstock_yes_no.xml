@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/transparant_pure"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_margin="@dimen/space_14"
+        android:background="@drawable/btn_shape_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ui.CustomtextView
+                android:background="@drawable/btn_shape_dialog_tambah_header"
+                android:text="Input Stock"
+                android:padding="@dimen/space_14"
+                android:textSize="@dimen/space_14"
+                android:textColor="@color/white"
+                font:name = "Helvetica_Medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_margin="@dimen/space_5"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/no_image"
+                    android:scaleType="fitXY"
+                    android:id="@+id/imgProduct"
+                    android:layout_width="@dimen/space_70"
+                    android:layout_height="@dimen/space_60" />
+
+                <ui.CustomtextView
+                    android:layout_marginLeft="@dimen/space_5"
+                    font:name = "Helvetica_Book"
+                    android:id="@+id/txtPCodeName"
+                    android:textAllCaps="true"
+                    android:text="-"
+                    android:gravity="fill"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/space_12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+            <View
+                android:background="@color/grey_s"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <ui.CustomtextView
+                android:layout_marginTop="@dimen/space_5"
+                android:layout_marginLeft="@dimen/space_10"
+                android:layout_marginRight="@dimen/space_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Status Stock"
+                android:textSize="@dimen/space_12"
+                font:name="Helvetica_Medium" />
+
+            <Spinner
+                android:layout_marginTop="@dimen/space_3"
+                android:layout_marginLeft="@dimen/space_10"
+                android:layout_marginRight="@dimen/space_10"
+                android:id="@+id/spnStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></Spinner>
+
+            <ui.CustomtextView
+                android:layout_marginTop="@dimen/space_3"
+                android:layout_marginLeft="@dimen/space_10"
+                android:layout_marginRight="@dimen/space_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Stock"
+                android:textSize="@dimen/space_12"
+                font:name="Helvetica_Medium" />
+
+            <ui.CustomEditText
+                android:layout_marginTop="@dimen/space_3"
+                android:layout_marginLeft="@dimen/space_10"
+                android:layout_marginRight="@dimen/space_10"
+                android:layout_marginBottom="@dimen/space_14"
+                font:name = "GOTHAM_MEDIUM"
+                android:textColor="@color/black"
+                android:id="@+id/edtStock"
+                android:textSize="@dimen/space_12"
+                android:numeric="integer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/space_10"
+        android:layout_marginLeft="@dimen/space_14"
+        android:layout_marginRight="@dimen/space_14"
+        android:background="@drawable/btn_shape_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_45">
+
+        <ui.CustomtextView
+            android:id="@+id/text_yes"
+            font:name = "Helvetica_Medium"
+            android:textColor="@color/black_ep"
+            android:textSize="@dimen/space_18"
+            android:gravity="center"
+            android:text="@string/text_yes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <View
+            android:layout_marginTop="@dimen/space_5"
+            android:layout_marginBottom="@dimen/space_5"
+            android:background="@color/colorLineBar"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"/>
+        <ui.CustomtextView
+            android:id="@+id/text_no"
+            font:name = "Helvetica_Medium"
+            android:textColor="@color/black_ep"
+            android:textSize="@dimen/space_18"
+            android:gravity="center"
+            android:text="@string/text_no"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

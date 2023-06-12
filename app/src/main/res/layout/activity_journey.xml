@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+
+    android:orientation="vertical"
+    android:background="@color/grey_s"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+     <include
+         android:id="@+id/tool_bar"
+         layout="@layout/tool_bar_master"/>
+     <fragment
+
+         android:id="@+id/map"
+         android:name="com.google.android.gms.maps.SupportMapFragment"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_marginBottom="@dimen/space_10"
+         android:layout_weight="1"/>
+
+     <LinearLayout
+         android:background="@drawable/btn_shape_white"
+         android:layout_marginLeft="@dimen/space_10"
+         android:layout_marginRight="@dimen/space_10"
+         android:layout_marginBottom="@dimen/space_10"
+         android:orientation="vertical"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_weight="1.3">
+
+          <android.support.v4.widget.NestedScrollView
+              android:layout_marginTop="@dimen/space_11"
+              android:layout_marginRight="@dimen/space_3"
+              android:layout_marginLeft="@dimen/space_3"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_weight="1">
+
+               <LinearLayout
+                   android:orientation="vertical"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   >
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                         <LinearLayout
+                             android:gravity="center"
+                             android:orientation="vertical"
+                             android:layout_width="wrap_content"
+                             android:layout_height="match_parent">
+
+                              <ui.CustomtextView
+                                  font:name = "GOTHAM_MEDIUM"
+                                  android:textSize="@dimen/space_10"
+                                  android:gravity="center"
+                                  android:text="@string/tv_time_start"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content" />
+
+                              <ui.CustomtextView
+                                  android:layout_marginTop="@dimen/space_3"
+                                  font:name = "GOTHAM_MEDIUM"
+                                  android:id="@+id/txtTimeGo"
+                                  android:textColor="@color/black"
+                                  android:textSize="@dimen/space_10"
+                                  android:gravity="center"
+                                  android:text="-"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content" />
+
+                         </LinearLayout>
+                         <LinearLayout
+                             android:orientation="vertical"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:layout_weight="1">
+
+                              <ui.CustomtextView
+                                  font:name = "GOTHAM_MEDIUM"
+                                  android:textSize="@dimen/space_20"
+                                  android:gravity="center"
+                                  android:text="@string/main_your_journey"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content" />
+
+                              <ui.CustomtextView
+                                  android:layout_marginTop="@dimen/space_3"
+                                  font:name = "GOTHAM_BLACK"
+                                  android:id="@+id/txtKM"
+                                  android:textColor="@color/black"
+                                  android:textSize="@dimen/space_28"
+                                  android:gravity="center"
+                                  android:text="0 km"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content" />
+                         </LinearLayout>
+
+                         <LinearLayout
+                             android:gravity="center"
+                             android:orientation="vertical"
+                             android:layout_width="wrap_content"
+                             android:layout_height="match_parent">
+
+                              <ui.CustomtextView
+                                  font:name = "GOTHAM_MEDIUM"
+                                  android:textSize="@dimen/space_10"
+                                  android:gravity="center"
+                                  android:text="@string/tv_time_end"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content" />
+
+                              <ui.CustomtextView
+                                  android:layout_marginTop="@dimen/space_3"
+                                  font:name = "GOTHAM_MEDIUM"
+                                  android:id="@+id/txtTimeEnd"
+                                  android:textColor="@color/black"
+                                  android:textSize="@dimen/space_10"
+                                  android:gravity="center"
+                                  android:text="-"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content" />
+
+                         </LinearLayout>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/space_5"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                         <ui.CustomtextView
+                             font:name = "GOTHAM_MEDIUM"
+                             android:textSize="@dimen/space_20"
+                             android:gravity="center"
+                             android:text="@string/main_your_achievment"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content" />
+
+                         <ui.CustomtextView
+                             android:layout_marginTop="@dimen/space_3"
+                             font:name = "GOTHAM_BLACK"
+                             android:id="@+id/txtTrophy"
+                             android:textColor="@color/black"
+                             android:textSize="@dimen/space_28"
+                             android:gravity="center"
+                             android:text="0 Piala"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+               </LinearLayout>
+          </android.support.v4.widget.NestedScrollView>
+
+
+          <LinearLayout
+              android:layout_marginRight="@dimen/space_14"
+              android:layout_marginLeft="@dimen/space_14"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_weight="2.3">
+
+               <ImageView
+                   android:visibility="gone"
+                   android:id="@+id/img_trophy1"
+                   android:padding="@dimen/space_5"
+                   android:src="@drawable/throphy"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_weight="1"/>
+
+               <ImageView
+                   android:visibility="gone"
+                   android:id="@+id/img_trophy2"
+                   android:padding="@dimen/space_5"
+                   android:src="@drawable/trophy2"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_weight="1"/>
+
+               <ImageView
+                   android:visibility="gone"
+                   android:id="@+id/img_trophy3"
+                   android:padding="@dimen/space_5"
+                   android:src="@drawable/pencapaian_icon"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_weight="1"/>
+
+               <ImageView
+                   android:visibility="gone"
+                   android:id="@+id/img_trophy4"
+                   android:padding="@dimen/space_5"
+                   android:src="@drawable/throphy"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_weight="1"/>
+
+          </LinearLayout>
+     </LinearLayout>
+
+</LinearLayout>

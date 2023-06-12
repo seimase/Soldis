@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_chat"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar_addoutlet"
+        />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+    </android.support.v4.view.ViewPager>
+
+    <View
+        android:background="@color/red"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:background="@color/white"
+        android:padding="@dimen/space_7"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:background="@drawable/selector_row"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:id="@+id/layout_master_product"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/img_menu_product"
+                android:tint="@color/grey"
+                android:src="@drawable/dinner64"
+                android:layout_width="@dimen/space_25"
+                android:layout_height="@dimen/space_25" />
+
+            <ui.CustomtextView
+                android:id="@+id/text_menu_product"
+                font:name = "Avenir_Light"
+                android:layout_marginTop="@dimen/space_3"
+                android:textSize="@dimen/space_11"
+                android:text="Menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:background="@drawable/selector_row"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:id="@+id/layout_master_outlet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/img_menu_outlet"
+                android:tint="@color/grey"
+                android:src="@drawable/icon_master"
+                android:layout_width="@dimen/space_25"
+                android:layout_height="@dimen/space_25" />
+
+            <ui.CustomtextView
+                android:id="@+id/text_menu_outlet"
+                font:name = "Avenir_Light"
+                android:layout_marginTop="@dimen/space_3"
+                android:textSize="@dimen/space_11"
+                android:text="@string/daily_classification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:background="@color/grey_s"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+</LinearLayout>

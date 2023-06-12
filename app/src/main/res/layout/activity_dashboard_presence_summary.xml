@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_s"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <include
+        android:visibility="gone"
+        layout="@layout/tool_bar_dashboard_leader"
+        android:id="@+id/tool_bar"
+        />
+
+    <View
+        android:visibility="gone"
+        android:background="@color/colorLineBar"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <RelativeLayout
+        android:id="@+id/layout_contract_header"
+        android:background="@color/colorBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_90">
+
+        <LinearLayout
+            android:layout_margin="@dimen/space_14"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/layout_back"
+                android:background="@drawable/selector_row_transparant"
+                android:gravity="center"
+                android:layout_width="@dimen/space_40"
+                android:layout_height="@dimen/space_40">
+
+                <ImageView
+                    android:src="@drawable/ic_arrow_back"
+                    android:tint="@color/white"
+                    android:layout_width="@dimen/space_30"
+                    android:layout_height="@dimen/space_30" />
+
+            </RelativeLayout>
+
+            <ui.CustomtextView
+                font:name = "Header"
+                font:type = "bold"
+                android:textAllCaps="true"
+                android:textSize="@dimen/space_16"
+                android:text="Nama Cabang"
+                android:id="@+id/txtName"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <RelativeLayout
+                android:id="@+id/layout_tgl"
+                android:background="@drawable/selector_row_transparant"
+                android:gravity="center"
+                android:layout_width="@dimen/space_40"
+                android:layout_height="@dimen/space_40">
+
+                <ImageView
+                    android:src="@drawable/calendar"
+                    android:layout_width="@dimen/space_25"
+                    android:layout_height="@dimen/space_25" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/space_7"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:padding="@dimen/space_7"
+                android:background="@color/colorBar"
+                android:layout_marginTop="@dimen/space_7"
+                android:layout_marginRight="@dimen/space_14"
+                android:layout_marginLeft="@dimen/space_14"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ui.CustomtextView
+                    font:name = "GOTHAM_BOLD"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dash_category"
+                    android:textSize="@dimen/space_12"
+                    android:textColor="@color/white"
+                    android:layout_weight="1.15"/>
+
+                <View
+                    android:background="@color/white"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"/>
+                <ui.CustomtextView
+                    font:name = "GOTHAM_BOLD"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dash_days"
+                    android:gravity="center"
+                    android:textSize="@dimen/space_12"
+                    android:textColor="@color/white"
+                    android:layout_weight="1"/>
+
+                <View
+                    android:background="@color/white"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"/>
+                <ui.CustomtextView
+                    font:name = "GOTHAM_BOLD"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dash_mtd"
+                    android:textSize="@dimen/space_12"
+                    android:textColor="@color/white"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:padding="@dimen/space_5"
+                    android:layout_marginRight="@dimen/space_14"
+                    android:layout_marginLeft="@dimen/space_14"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ui.CustomtextView
+                        font:name = "GOTHAM_BOLD"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="EC"
+                        android:textSize="@dimen/space_11"
+                        android:layout_weight="1.15"/>
+
+                    <ui.CustomtextView
+                        font:name = "GOTHAM_BOLD"
+                        android:id="@+id/txtEC"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:gravity="center"
+                        android:textSize="@dimen/space_11"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"/>
+
+                    <ui.CustomtextView
+                        android:id="@+id/txtECMTD"
+                        font:name = "GOTHAM_BOLD"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textSize="@dimen/space_11"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="@color/teledokter_lightgreen"
+                    android:padding="@dimen/space_5"
+                    android:layout_marginRight="@dimen/space_14"
+                    android:layout_marginLeft="@dimen/space_14"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ui.CustomtextView
+                        font:name = "GOTHAM_BOLD"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="CALL"
+                        android:textSize="@dimen/space_11"
+                        android:layout_weight="1.15"/>
+
+                    <ui.CustomtextView
+                        font:name = "GOTHAM_BOLD"
+                        android:id="@+id/txtCall"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:gravity="center"
+                        android:textSize="@dimen/space_11"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"/>
+
+                    <ui.CustomtextView
+                        android:id="@+id/txtCallMTD"
+                        font:name = "GOTHAM_BOLD"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textSize="@dimen/space_11"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:padding="@dimen/space_5"
+                    android:layout_marginRight="@dimen/space_14"
+                    android:layout_marginLeft="@dimen/space_14"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ui.CustomtextView
+                        font:name = "GOTHAM_BOLD"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="NOO"
+                        android:textSize="@dimen/space_11"
+                        android:layout_weight="1.15"/>
+
+
+                    <ui.CustomtextView
+                        android:id="@+id/txtNOO"
+                        font:name = "GOTHAM_BOLD"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:gravity="center"
+                        android:textSize="@dimen/space_11"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"/>
+
+
+                    <ui.CustomtextView
+                        android:id="@+id/txtNooMTD"
+                        font:name = "GOTHAM_BOLD"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textSize="@dimen/space_11"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="@color/teledokter_lightgreen"
+                    android:padding="@dimen/space_5"
+                    android:layout_marginRight="@dimen/space_14"
+                    android:layout_marginLeft="@dimen/space_14"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ui.CustomtextView
+                        font:name = "GOTHAM_BOLD"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dash_sales"
+                        android:textSize="@dimen/space_11"
+                        android:layout_weight="1.15"/>
+
+
+                    <ui.CustomtextView
+                        android:id="@+id/txtSales"
+                        font:name = "GOTHAM_BOLD"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:gravity="center"
+                        android:textSize="@dimen/space_11"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"/>
+
+                    <ui.CustomtextView
+                        android:id="@+id/txtSalesMTD"
+                        font:name = "GOTHAM_BOLD"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textSize="@dimen/space_11"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/space_50"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_50"
+                    android:layout_marginLeft="@dimen/space_40"
+                    android:layout_marginRight="@dimen/space_40"
+                    android:layout_marginTop="@dimen/space_14"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/space_7"
+                    android:paddingTop="@dimen/space_7">
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/space_7"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ui.CustomtextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Kehadiran Bulan"
+                            android:textColor="@color/grey"
+                            android:textSize="@dimen/space_12"
+                            font:name="Header_Reguler"
+                            font:type="bold" />
+
+                        <ui.CustomtextView
+                            font:name = "Header"
+                            font:type="bold"
+                            android:textSize="@dimen/space_12"
+                            android:singleLine="true"
+                            android:id="@+id/txtTgl"
+                            android:text="Tanggal transaksi : "
+
+                            android:textColor="@color/black"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/space_14">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ui.CustomtextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/space_14"
+                            android:text="Data Kehadiran"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/space_14"
+                            font:name="GOTHAM_MEDIUM" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/colorLineBar" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/my_recyclerview"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+

@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/grey_s"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:visibility="gone"
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar_master"/>
+
+    <RelativeLayout
+        android:id="@+id/layout_contract_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space_10"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/layout_back"
+                android:layout_width="@dimen/space_40"
+                android:layout_height="@dimen/space_40"
+                android:background="@drawable/selector_row_transparant"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="@dimen/space_25"
+                    android:layout_height="@dimen/space_25"
+                    android:src="@drawable/ic_arrow_back"
+                    android:tint="@color/black" />
+
+            </RelativeLayout>
+
+            <ui.CustomtextView
+                android:layout_marginLeft="@dimen/space_5"
+                font:name = "Helvetica_Bold"
+                android:textSize="@dimen/space_18"
+                android:gravity="fill"
+                android:textColor="@color/colorBlackEP"
+                android:text="Penagihan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <RelativeLayout
+                android:id="@+id/layout_tgl"
+                android:background="@drawable/selector_row_transparant"
+                android:layout_width="@dimen/space_100"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/logo_soldis" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:background="@color/grey_s"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:background="@color/colorBar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_140">
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/space_14"
+                android:background="@color/transparant_pure"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/space_10">
+
+                    <ui.CircleImageView
+                        android:id="@+id/img_avatar"
+                        android:src="@drawable/avatar"
+                        android:layout_width="@dimen/space_60"
+                        android:layout_height="@dimen/space_60" />
+                </RelativeLayout>
+
+                <ui.CustomtextView
+                    font:name = "Helvetica_Medium"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/space_14"
+                    android:text="Nama Outlet"
+                    android:id="@+id/text_nama_toko"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <ui.CustomtextView
+                    font:name = "Helvetica_light"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/space_12"
+                    android:singleLine="true"
+                    android:id="@+id/text_alamat"
+                    android:text="Alamat Outlet"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <ui.CustomtextView
+                    font:name = "Helvetica_Book"
+                    android:textSize="@dimen/space_12"
+                    android:singleLine="true"
+                    android:id="@+id/text_tgl"
+                    android:text="Tanggal transaksi : "
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/space_140"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/space_14"
+                    app:cardCornerRadius="@dimen/space_14"
+                    app:cardElevation="6dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ui.CustomtextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/space_14"
+                            android:text="Data"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/space_14"
+                            font:name="GOTHAM_MEDIUM" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/colorLineBar" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/space_14"
+                            android:layout_marginTop="@dimen/space_7"
+                            android:orientation="horizontal">
+
+                            <CheckBox
+                                android:id="@+id/chkInvoice"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <ui.CustomtextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Bawa Invoice"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/space_14"
+                                font:name="GOTHAM_MEDIUM" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/space_14"
+                            android:layout_marginTop="@dimen/space_7"
+                            android:orientation="horizontal">
+
+                            <CheckBox
+                                android:id="@+id/chkSuratJalan"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <ui.CustomtextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Bawa surat jalan"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/space_14"
+                                font:name="GOTHAM_MEDIUM" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/space_14"
+                            android:layout_marginTop="@dimen/space_7"
+                            android:orientation="horizontal">
+
+                            <CheckBox
+                                android:id="@+id/chkTukarFaktur"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <ui.CustomtextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Tukar faktur"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/space_14"
+                                font:name="GOTHAM_MEDIUM" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+
+
+            <ui.CustomtextView
+                android:layout_marginBottom="@dimen/space_5"
+                android:layout_marginLeft="@dimen/space_14"
+                android:layout_marginRight="@dimen/space_14"
+                android:id="@+id/txtSave"
+                android:background="@drawable/btn_shape_all_green"
+                font:name = "GOTHAM_BLACK"
+                android:gravity="center"
+                android:padding="@dimen/space_14"
+                android:textSize="@dimen/space_16"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:text="@string/daily_save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

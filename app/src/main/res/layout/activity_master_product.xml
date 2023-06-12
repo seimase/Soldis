@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar_master_sync"
+        />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="@dimen/space_14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ui.CustomtextView
+            font:name = "GOTHAM_BOOK"
+            android:textSize="@dimen/space_12"
+            android:text="@string/dash_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/ly_search_category"
+            android:layout_marginTop="@dimen/space_3"
+            android:orientation="horizontal"
+            android:background="@drawable/btn_shape_all_black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ui.CustomtextView
+                android:id="@+id/txtCategory"
+                android:layout_margin="@dimen/space_4"
+                font:name = "GOTHAM_MEDIUM"
+                android:textSize="@dimen/space_12"
+                android:textColor="@color/black"
+                android:hint="@string/dash_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:layout_marginRight="@dimen/space_3"
+                android:src="@drawable/arrow_down"
+                android:layout_width="@dimen/space_14"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:background="@color/colorLineBar"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/my_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

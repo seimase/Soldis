@@ -1,0 +1,947 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar_master"
+        />
+
+
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/space_10"
+        android:layout_marginBottom="@dimen/space_5"
+        android:layout_marginLeft="@dimen/space_14"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:background="@drawable/btn_shape_half_blue_selected"
+            android:layout_width="@dimen/space_7"
+            android:layout_height="match_parent"></RelativeLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/space_5"
+            android:layout_marginLeft="@dimen/space_14"
+            android:layout_marginBottom="@dimen/space_5"
+            android:orientation="vertical"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ui.CustomtextView
+                    font:name = "GOTHAM_MEDIUM"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/space_12"
+                    android:text="@string/profile_id_leader"
+                    android:layout_width="@dimen/space_100"
+                    android:layout_height="wrap_content" />
+
+                <ui.CustomtextView
+
+                    font:name = "GOTHAM_MEDIUM"
+
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/space_12"
+                    android:text=" : "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ui.CustomtextView
+                    font:name = "GOTHAM_MEDIUM"
+
+                    android:textColor="@color/black"
+                    android:id="@+id/text_id"
+                    android:textSize="@dimen/space_12"
+                    android:text="50129123"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/space_3"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ui.CustomtextView
+                    font:name = "GOTHAM_LIGHT"
+                    android:textSize="@dimen/space_12"
+                    android:text="@string/profile_leader_name"
+                    android:layout_width="@dimen/space_100"
+                    android:layout_height="wrap_content" />
+
+                <ui.CustomtextView
+
+                    font:name = "GOTHAM_BOOK"
+                    android:textSize="@dimen/space_12"
+                    android:text=" : "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ui.CustomtextView
+                    font:name = "GOTHAM_BOOK"
+                    android:id="@+id/text_name"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/space_12"
+                    android:text="Ahmad Budi Syafrudin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:background="@color/colorLineBar"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+
+        android:layout_margin="@dimen/space_10"
+        android:background="@drawable/btn_shape_kotak_blue"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ui.CustomtextView
+            font:name = "GOTHAM_MEDIUM"
+            android:gravity="center"
+            android:text="TOTAL REGISTERED OUTLET"
+            android:textSize="@dimen/space_14"
+            android:layout_marginTop="@dimen/space_3"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <ui.CustomtextView
+            font:name = "GOTHAM_BLACK"
+            android:id="@+id/txtTotalRo"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="@dimen/space_25"
+            android:textColor="@color/red"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <View
+        android:background="@color/colorLineBar"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:background="@drawable/selector_row"
+        android:id="@+id/layout_zone"
+        android:layout_margin="@dimen/space_5"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ui.CustomtextView
+
+            font:name = "GOTHAM_MEDIUM"
+            android:paddingTop="@dimen/space_10"
+            android:paddingBottom="@dimen/space_10"
+            android:paddingLeft="@dimen/space_20"
+            android:text="SUMMARY ZONE"
+            android:textSize="@dimen/space_14"
+            android:id="@+id/text_pilih"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/img_arrow"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/space_14"
+            android:src="@drawable/arrow_up"
+            android:layout_width="@dimen/space_20"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/layout_row"
+        android:background="@drawable/selector_row"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:padding="@dimen/space_7"
+            android:background="@color/colorBar"
+            android:layout_marginTop="@dimen/space_7"
+            android:layout_marginRight="@dimen/space_14"
+            android:layout_marginLeft="@dimen/space_14"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ui.CustomtextView
+                font:name = "GOTHAM_BOLD"
+                android:textColor="@color/white"
+                android:textSize="@dimen/space_12"
+                android:text="REGULER"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <View
+                android:background="@color/white"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"/>
+
+            <ui.CustomtextView
+                font:name = "GOTHAM_BOLD"
+                android:textColor="@color/white"
+                android:textSize="@dimen/space_12"
+                android:text="AFH UO"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_marginRight="@dimen/space_14"
+            android:layout_marginLeft="@dimen/space_14"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ui.CustomtextView
+                    font:name = "Avenir_Heavy"
+                    android:text="MTR"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/space_10"
+                    android:gravity="center"
+                    android:layout_width="@dimen/space_40"
+                    android:layout_height="match_parent" />
+                <LinearLayout
+                    android:layout_marginRight="@dimen/space_10"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_55"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ui.CustomtextView
+                            android:text="Total : "
+                            font:name = "Avenir_Light"
+                            android:textSize="@dimen/space_10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <ui.CustomtextView
+                            android:id="@+id/txtTotalMotoris"
+                            android:text="Rp 30.000"
+                            font:name = "GOTHAM_MEDIUM"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/space_10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+
+
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:indeterminate="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space_14"
+                        android:id="@+id/progressHadir"
+
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:max="100"
+                        android:progress="0" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ui.CustomtextView
+                            android:text="Hadir : "
+                            font:name = "Avenir_Light"
+                            android:textSize="@dimen/space_10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <ui.CustomtextView
+                            android:text="(100%)"
+                            android:id="@+id/txtHadir"
+                            font:name = "GOTHAM_MEDIUM"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/space_10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ui.CustomtextView
+                    font:name = "Avenir_Heavy"
+                    android:text="MTR"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/space_10"
+                    android:gravity="center"
+                    android:layout_width="@dimen/space_40"
+                    android:layout_height="match_parent"  />
+
+                <LinearLayout
+                    android:layout_marginRight="@dimen/space_10"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_55"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ui.CustomtextView
+                            android:text="Total : "
+                            font:name = "Avenir_Light"
+                            android:textSize="@dimen/space_10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <ui.CustomtextView
+                            android:id="@+id/txtTotalMotorisAFH"
+                            android:text="Rp 30.000"
+                            font:name = "GOTHAM_MEDIUM"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/space_10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:indeterminate="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space_14"
+                        android:id="@+id/progressHadirAFH"
+
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:max="100"
+                        android:progress="0" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ui.CustomtextView
+                            android:text="Hadir : "
+                            font:name = "Avenir_Light"
+                            android:textSize="@dimen/space_10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <ui.CustomtextView
+                            android:text="(100%)"
+                            android:id="@+id/txtHadirAFH"
+                            font:name = "GOTHAM_MEDIUM"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/space_10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@color/teledokter_lightgreen"
+            android:layout_marginRight="@dimen/space_14"
+            android:layout_marginLeft="@dimen/space_14"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ui.CustomtextView
+                    font:name = "Avenir_Heavy"
+                    android:text="EC"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/space_10"
+                    android:gravity="center"
+                    android:layout_width="@dimen/space_40"
+                    android:layout_height="match_parent" />
+                <LinearLayout
+                    android:layout_marginRight="@dimen/space_10"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_55"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ui.CustomtextView
+                            android:text="Target : "
+                            font:name = "Avenir_Light"
+                            android:textSize="@dimen/space_10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <ui.CustomtextView
+                            android:text="(100%)"
+                            android:id="@+id/txtECTarget"
+                            font:name = "GOTHAM_MEDIUM"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/space_10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+
+                    </LinearLayout>
+
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:indeterminate="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space_14"
+                        android:id="@+id/progressEC"
+
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:max="100"
+                        android:progress="0" />
+
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ui.CustomtextView
+                            android:text="Total : "
+                            font:name = "Avenir_Light"
+                            android:textSize="@dimen/space_10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <ui.CustomtextView
+                            android:id="@+id/txtTotalEC"
+                            android:text="Rp 30.000"
+                            font:name = "GOTHAM_MEDIUM"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/space_10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ui.CustomtextView
+                    font:name = "Avenir_Heavy"
+                    android:text="EC"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/space_10"
+                    android:gravity="center"
+                    android:layout_width="@dimen/space_40"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:layout_marginRight="@dimen/space_10"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_55"
+                    android:layout_weight="1">
+
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ui.CustomtextView
+                            android:text="Target : "
+                            font:name = "Avenir_Light"
+                            android:textSize="@dimen/space_10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <ui.CustomtextView
+                            android:text="(100%)"
+                            android:id="@+id/txtECTargetAFH"
+                            font:name = "GOTHAM_MEDIUM"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/space_10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+
+                    </LinearLayout>
+
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:indeterminate="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space_14"
+                        android:id="@+id/progressECAFH"
+
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:max="100"
+                        android:progress="0" />
+
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ui.CustomtextView
+                            android:text="Total : "
+                            font:name = "Avenir_Light"
+                            android:textSize="@dimen/space_10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <ui.CustomtextView
+                            android:id="@+id/txtTotalECAFH"
+                            android:text="Rp 30.000"
+                            font:name = "GOTHAM_MEDIUM"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/space_10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_marginRight="@dimen/space_14"
+            android:layout_marginLeft="@dimen/space_14"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ui.CustomtextView
+                    font:name = "Avenir_Heavy"
+                    android:text="CALL"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/space_10"
+                    android:gravity="center"
+                    android:layout_width="@dimen/space_40"
+                    android:layout_height="match_parent" />
+                <LinearLayout
+                    android:layout_marginRight="@dimen/space_10"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_55"
+                    android:layout_weight="1">
+
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ui.CustomtextView
+                            android:text="Target : "
+                            font:name = "Avenir_Light"
+                            android:textSize="@dimen/space_10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <ui.CustomtextView
+                            android:text="(100%)"
+                            android:id="@+id/txtCallTarget"
+                            font:name = "GOTHAM_MEDIUM"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/space_10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+
+                    </LinearLayout>
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:indeterminate="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space_14"
+                        android:id="@+id/progressCall"
+
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:max="100"
+                        android:progress="0" />
+
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ui.CustomtextView
+                            android:text="Total : "
+                            font:name = "Avenir_Light"
+                            android:textSize="@dimen/space_10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <ui.CustomtextView
+                            android:id="@+id/txtTotalCall"
+                            android:text="Rp 30.000"
+                            font:name = "GOTHAM_MEDIUM"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/space_10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ui.CustomtextView
+                    font:name = "Avenir_Heavy"
+                    android:text="CALL"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/space_10"
+                    android:gravity="center"
+                    android:layout_width="@dimen/space_40"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:layout_marginRight="@dimen/space_10"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_55"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ui.CustomtextView
+                            android:text="Target : "
+                            font:name = "Avenir_Light"
+                            android:textSize="@dimen/space_10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <ui.CustomtextView
+                            android:text="(100%)"
+                            android:id="@+id/txtCallTargetAFH"
+                            font:name = "GOTHAM_MEDIUM"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/space_10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+
+                    </LinearLayout>
+
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:indeterminate="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space_14"
+                        android:id="@+id/progressCallAFH"
+
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:max="100"
+                        android:progress="0" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ui.CustomtextView
+                            android:text="Total : "
+                            font:name = "Avenir_Light"
+                            android:textSize="@dimen/space_10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <ui.CustomtextView
+                            android:id="@+id/txtTotalCallAFH"
+                            android:text="Rp 30.000"
+                            font:name = "GOTHAM_MEDIUM"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/space_10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@color/teledokter_lightgreen"
+            android:layout_marginRight="@dimen/space_14"
+            android:layout_marginLeft="@dimen/space_14"
+            android:layout_marginBottom="@dimen/space_10"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ui.CustomtextView
+                    font:name = "Avenir_Heavy"
+                    android:text="SALES"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/space_10"
+                    android:gravity="center"
+                    android:layout_width="@dimen/space_40"
+                    android:layout_height="match_parent" />
+                <LinearLayout
+                    android:layout_marginRight="@dimen/space_10"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_55"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ui.CustomtextView
+                            android:text="Target : "
+                            font:name = "Avenir_Light"
+                            android:textSize="@dimen/space_10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <ui.CustomtextView
+                            android:text="(100%)"
+                            android:id="@+id/txtSalesTarget"
+                            font:name = "GOTHAM_MEDIUM"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/space_10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+
+                    </LinearLayout>
+
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:indeterminate="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space_14"
+                        android:id="@+id/progressSales"
+
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:max="100"
+                        android:progress="0" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ui.CustomtextView
+                            android:text="Total : "
+                            font:name = "Avenir_Light"
+                            android:textSize="@dimen/space_10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <ui.CustomtextView
+                            android:id="@+id/txtTotalSales"
+                            android:text="Rp 30.000"
+                            font:name = "GOTHAM_MEDIUM"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/space_10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ui.CustomtextView
+                    font:name = "Avenir_Heavy"
+                    android:text="SALES"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/space_10"
+                    android:gravity="center"
+                    android:layout_width="@dimen/space_40"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:layout_marginRight="@dimen/space_10"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_55"
+                    android:layout_weight="1">
+
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ui.CustomtextView
+                            android:text="Target : "
+                            font:name = "Avenir_Light"
+                            android:textSize="@dimen/space_10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <ui.CustomtextView
+                            android:text="(100%)"
+                            android:id="@+id/txtSalesTargetAFH"
+                            font:name = "GOTHAM_MEDIUM"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/space_10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+
+                    </LinearLayout>
+
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:indeterminate="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space_14"
+                        android:id="@+id/progressSalesAFH"
+
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:max="100"
+                        android:progress="0" />
+
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ui.CustomtextView
+                            android:text="Total : "
+                            font:name = "Avenir_Light"
+                            android:textSize="@dimen/space_10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <ui.CustomtextView
+                            android:id="@+id/txtTotalSalesAFH"
+                            android:text="Rp 30.000"
+                            font:name = "GOTHAM_MEDIUM"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/space_10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:background="@color/colorLineBar"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <RelativeLayout
+        android:background="@color/grey_s"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/my_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </RelativeLayout>
+
+
+
+</LinearLayout>
+
+

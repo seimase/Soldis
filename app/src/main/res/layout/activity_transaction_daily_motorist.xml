@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/layout_contract_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space_10"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/layout_back"
+                android:layout_width="@dimen/space_40"
+                android:layout_height="@dimen/space_40"
+                android:background="@drawable/selector_row_transparant"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="@dimen/space_25"
+                    android:layout_height="@dimen/space_25"
+                    android:src="@drawable/ic_arrow_back"
+                    android:tint="@color/black" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="fill"
+                android:layout_weight="1">
+
+                <ui.CustomtextView
+                    android:layout_marginLeft="@dimen/space_5"
+                    font:name = "Helvetica_Bold"
+                    android:textSize="@dimen/space_18"
+                    android:gravity="fill"
+                    android:textColor="@color/colorBlackEP"
+                    android:text="Harian Salesman"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+
+                <LinearLayout
+                    android:layout_marginLeft="@dimen/space_5"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:padding="@dimen/space_1"
+                        android:src="@drawable/calendar"
+                        android:layout_width="@dimen/space_14"
+                        android:layout_height="@dimen/space_14" />
+
+                    <ui.CustomtextView
+                        android:layout_marginLeft="@dimen/space_1"
+                        font:name = "Helvetica_Book"
+                        android:textSize="@dimen/space_12"
+                        android:text="Tanggal Transkasi : "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <ui.CustomtextView
+                        android:layout_marginLeft="@dimen/space_5"
+                        font:name = "Helvetica_Medium"
+                        android:textColor="@color/black"
+                        android:id="@+id/textDate"
+                        android:text="-"
+                        android:textSize="@dimen/space_12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/layout_filter"
+                android:background="@drawable/selector_row_transparant"
+                android:layout_width="@dimen/space_40"
+                android:layout_height="@dimen/space_40"
+                android:gravity="center">
+
+                <ImageView
+                    android:tint="@color/black"
+                    android:layout_width="@dimen/space_20"
+                    android:layout_height="@dimen/space_20"
+                    android:src="@drawable/filter" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:background="@color/grey_s"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:paddingLeft="@dimen/space_14"
+        android:paddingRight="@dimen/space_14"
+        android:background="@color/colorBar"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:visibility="gone"
+            android:padding="@dimen/space_7"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:background="@drawable/btn_shape_all_transparant_white"
+                android:padding="@dimen/space_5"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ui.CustomtextView
+                    android:gravity="center"
+                    font:name = "Header"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/space_12"
+                    android:text="@string/daily_call"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <ui.CustomtextView
+                    android:gravity="center"
+                    font:name = "Header"
+                    font:type = "bold"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/space_12"
+                    android:id="@+id/txtTotalKunjungan"
+                    android:text="10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/space_14"
+                android:layout_height="match_parent"/>
+
+
+            <LinearLayout
+                android:background="@drawable/btn_shape_all_transparant_white"
+                android:padding="@dimen/space_5"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ui.CustomtextView
+                    android:gravity="center"
+                    font:name = "Header"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/space_12"
+                    android:text="@string/daily_ec"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <ui.CustomtextView
+                    android:gravity="center"
+                    font:name = "Header"
+                    font:type = "bold"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/space_12"
+                    android:id="@+id/txtTotalEC"
+                    android:text="10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/space_14"
+                android:layout_height="match_parent"/>
+
+            <LinearLayout
+                android:background="@drawable/btn_shape_all_transparant_white"
+                android:padding="@dimen/space_5"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ui.CustomtextView
+                    android:gravity="center"
+                    font:name = "Header"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/space_12"
+                    android:text="NOT EC"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <ui.CustomtextView
+                    android:gravity="center"
+                    font:name = "Header"
+                    font:type = "bold"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/space_12"
+                    android:id="@+id/txtNotEc"
+                    android:text="10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@color/colorBar"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/layout_search"
+            android:orientation="horizontal"
+            android:background="@drawable/btn_shape_all_white_search"
+
+            android:layout_margin="@dimen/space_14"
+            android:paddingTop="@dimen/space_10"
+            android:paddingBottom="@dimen/space_10"
+            android:paddingLeft="@dimen/space_10"
+            android:paddingRight="@dimen/space_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:layout_marginLeft="@dimen/space_5"
+                android:src="@drawable/search"
+                android:layout_width="@dimen/space_14"
+                android:layout_height="@dimen/space_14" />
+
+            <ui.CustomEditText
+                android:gravity="fill"
+                android:singleLine="true"
+                android:id="@+id/edtSearch"
+                font:name = "Helvetica_Book"
+                android:textSize="@dimen/space_12"
+                android:layout_marginLeft="@dimen/space_5"
+                android:textColor="@color/black"
+                android:background="@color/transparant_pure"
+                android:hint="@string/daily_search_outlet"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/layout_search_detail"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/space_10"
+        android:paddingBottom="@dimen/space_10"
+        android:paddingLeft="@dimen/space_14"
+        android:layout_marginRight="@dimen/space_14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ui.CustomtextView
+            font:name = "GOTHAM_BOOK"
+            android:text="@string/daily_keyword"
+            android:textSize="@dimen/space_12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ui.CustomEditText
+            font:name = "GOTHAM_MEDIUM"
+            android:id="@+id/edt_keyword"
+            android:textSize="@dimen/space_12"
+            android:layout_marginBottom="@dimen/space_3"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ui.CustomtextView
+            font:name = "GOTHAM_BOOK"
+            android:layout_marginTop="@dimen/space_5"
+            android:text="@string/daily_village"
+            android:textSize="@dimen/space_12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/layout_kelurahan"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/space_10"
+            android:paddingTop="@dimen/space_8"
+            android:paddingBottom="@dimen/space_8"
+            android:background="@drawable/btn_shape_all_black"
+            android:layout_marginTop="@dimen/space_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ui.CustomtextView
+                android:text="@string/daily_all"
+                android:id="@+id/txtKelurahan"
+                android:textSize="@dimen/space_12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:layout_marginRight="@dimen/space_5"
+                android:src="@drawable/arrow_down"
+                android:layout_width="@dimen/space_14"
+                android:layout_height="@dimen/space_14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/space_10"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:background="@drawable/btn_shape_all_red"
+                android:id="@+id/layout_batal"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:src="@drawable/com_facebook_tooltip_black_xout"
+                    android:tint="@color/white"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:layout_width="@dimen/space_12"
+                    android:layout_height="@dimen/space_12" />
+                <ui.CustomtextView
+                    font:name = "GOTHAM_BOLD"
+                    android:gravity="center"
+                    android:text="@string/daily_cancel"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/space_12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/space_20"
+                android:layout_height="1dp"/>
+
+            <LinearLayout
+                android:id="@+id/layout_cari"
+                android:background="@drawable/btn_shape_all_green_search"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:src="@drawable/search"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:tint="@color/white"
+                    android:layout_width="@dimen/space_12"
+                    android:layout_height="@dimen/space_12" />
+                <ui.CustomtextView
+                    android:gravity="center"
+                    font:name = "GOTHAM_BOLD"
+                    android:text="@string/daily_search"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/space_12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+    <View
+        android:background="@color/colorLineBar"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"/>
+    <View
+        android:background="@color/grey_s"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_10"/>
+
+
+    <RelativeLayout
+        android:id="@+id/layout_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/my_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:visibility="gone"
+            android:id="@+id/fab_add"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/plus_white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:backgroundTint="@color/Green_Papper"
+            app:useCompatPadding= "true"
+            app:borderWidth="0dp"
+            app:elevation="6dp"
+            app:fabSize="normal" />
+    </RelativeLayout>
+
+    <View
+        android:background="@color/green"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:background="@color/grey"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_margin="@dimen/space_6"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_40">
+
+            <LinearLayout
+                android:background="@drawable/btn_shape_all_green"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:id="@+id/layout_pjp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/img_menu_product"
+                        android:tint="@color/white"
+                        android:src="@drawable/pjp"
+                        android:layout_width="@dimen/space_25"
+                        android:layout_height="@dimen/space_25" />
+
+                    <ui.CustomtextView
+                        android:gravity="center"
+                        android:layout_marginLeft="@dimen/space_10"
+                        font:name = "Avenir_Heavy"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/space_14"
+                        android:text="PJP"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+
+                    <ui.CustomtextView
+                        android:gravity="center"
+                        android:id="@+id/txtPjp"
+                        font:name = "Avenir_Heavy"
+                        android:textColor="@color/yellow"
+                        android:textSize="@dimen/space_14"
+                        android:text=""
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/vwPJP"
+                    android:layout_marginLeft="@dimen/space_7"
+                    android:layout_marginRight="@dimen/space_7"
+                    android:background="@color/yellow"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"/>
+            </LinearLayout>
+
+
+
+            <View
+                android:layout_width="@dimen/space_6"
+                android:layout_height="1dp"/>
+
+            <LinearLayout
+                android:background="@drawable/btn_shape_all_green"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:id="@+id/layout_non_pjp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/img_menu_outlet"
+                        android:tint="@color/white"
+                        android:src="@drawable/non_pjp"
+                        android:layout_width="@dimen/space_25"
+                        android:layout_height="@dimen/space_25" />
+
+                    <ui.CustomtextView
+                        android:gravity="center"
+                        android:layout_marginLeft="@dimen/space_14"
+                        android:id="@+id/text_menu_outlet"
+                        font:name = "Avenir_Heavy"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/space_14"
+                        android:text="Non PJP"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+
+                    <ui.CustomtextView
+                        android:gravity="center"
+                        android:id="@+id/txtNonPjp"
+                        font:name = "Avenir_Heavy"
+                        android:textColor="@color/yellow"
+                        android:textSize="@dimen/space_14"
+                        android:text=""
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+
+                <View
+                    android:visibility="gone"
+                    android:id="@+id/vwNonPJP"
+                    android:layout_marginLeft="@dimen/space_7"
+                    android:layout_marginRight="@dimen/space_7"
+                    android:background="@color/yellow"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    <View
+        android:background="@color/grey_s"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/layout_sync"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ui.CustomtextView
+            font:name = "GOTHAM_BOOK"
+            android:text="Tidak ada data"
+            android:textSize="@dimen/space_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ui.CustomtextView
+            android:layout_marginTop="@dimen/space_7"
+            font:name = "GOTHAM_BOOK"
+            android:id="@+id/txtSync"
+            android:text="Sinkronisasi"
+            android:textSize="@dimen/space_12"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_shape_all_blue_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</LinearLayout>

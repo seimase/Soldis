@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <View
+        android:background="@color/grey_s"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_2"/>
+    <LinearLayout
+        android:layout_marginTop="@dimen/space_7"
+        android:layout_marginLeft="@dimen/space_14"
+        android:layout_marginRight="@dimen/space_14"
+        android:layout_marginBottom="@dimen/space_7"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ui.CustomtextView
+            font:name = "GOTHAM_MEDIUM"
+            android:text="@string/dash_product"
+            android:textSize="@dimen/space_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ui.CustomtextView
+            android:layout_marginLeft="@dimen/space_5"
+            font:name = "GOTHAM_MEDIUM"
+            android:textColor="@color/black"
+            android:id="@+id/txtPCode"
+            android:text="Paseo SMART 250 GT"
+            android:textSize="@dimen/space_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <View
+        android:background="@color/grey_s"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <RelativeLayout
+        android:layout_marginLeft="@dimen/space_14"
+        android:layout_marginRight="@dimen/space_14"
+        android:layout_marginTop="@dimen/space_7"
+        android:layout_marginBottom="@dimen/space_7"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/masuk"
+                android:tint="@color/red"
+                android:layout_width="@dimen/space_20"
+                android:layout_height="@dimen/space_10" />
+
+            <LinearLayout
+                android:layout_marginLeft="@dimen/space_7"
+                android:id="@+id/layout_uom1"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ui.CustomtextView
+                    android:textAllCaps="true"
+                    font:name = "GOTHAM_MEDIUM"
+                    android:id="@+id/text_label_uom1"
+                    android:text="CTN"
+                    android:textSize="@dimen/space_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ui.CustomtextView
+                    android:layout_marginTop="@dimen/space_3"
+                    font:name = "GOTHAM_MEDIUM"
+                    android:id="@+id/text_uom1"
+                    android:text="12"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/space_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="@dimen/space_7"
+                android:id="@+id/layout_uom2"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ui.CustomtextView
+                    android:textAllCaps="true"
+                    font:name = "GOTHAM_MEDIUM"
+                    android:id="@+id/text_label_uom2"
+                    android:text="PACK"
+                    android:textSize="@dimen/space_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ui.CustomtextView
+                    font:name = "GOTHAM_MEDIUM"
+                    android:layout_marginTop="@dimen/space_3"
+                    android:id="@+id/text_uom2"
+                    android:text="6"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/space_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="@dimen/space_7"
+                android:id="@+id/layout_uom3"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ui.CustomtextView
+                    android:textAllCaps="true"
+                    font:name = "GOTHAM_MEDIUM"
+                    android:id="@+id/text_label_uom3"
+                    android:text="PCS"
+                    android:textSize="@dimen/space_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <ui.CustomtextView
+                    font:name = "GOTHAM_MEDIUM"
+                    android:layout_marginTop="@dimen/space_3"
+                    android:id="@+id/text_uom3"
+                    android:text="8"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/space_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/space_14"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/keluar"
+                android:tint="@color/green"
+                android:layout_width="@dimen/space_20"
+                android:layout_height="@dimen/space_10" />
+
+            <LinearLayout
+                android:layout_marginLeft="@dimen/space_7"
+                android:id="@+id/layout_uom1_out"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ui.CustomtextView
+                    android:textAllCaps="true"
+                    font:name = "GOTHAM_MEDIUM"
+                    android:id="@+id/text_label_uom1_out"
+                    android:text="CTN"
+                    android:textSize="@dimen/space_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ui.CustomtextView
+                    font:name = "GOTHAM_MEDIUM"
+                    android:layout_marginTop="@dimen/space_3"
+                    android:id="@+id/text_uom1_out"
+                    android:text="7"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/space_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="@dimen/space_7"
+                android:id="@+id/layout_uom2_out"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ui.CustomtextView
+                    android:textAllCaps="true"
+                    font:name = "GOTHAM_MEDIUM"
+                    android:id="@+id/text_label_uom2_out"
+                    android:text="PACK"
+                    android:textSize="@dimen/space_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ui.CustomtextView
+                    font:name = "GOTHAM_MEDIUM"
+                    android:layout_marginTop="@dimen/space_3"
+                    android:id="@+id/text_uom2_out"
+                    android:text="4"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/space_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="@dimen/space_7"
+                android:id="@+id/layout_uom3_out"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ui.CustomtextView
+                    android:textAllCaps="true"
+                    font:name = "GOTHAM_MEDIUM"
+                    android:id="@+id/text_label_uom3_out"
+                    android:text="PCS"
+                    android:textSize="@dimen/space_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ui.CustomtextView
+                    font:name = "GOTHAM_MEDIUM"
+                    android:layout_marginTop="@dimen/space_3"
+                    android:id="@+id/text_uom3_out"
+                    android:text="3"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/space_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:background="@color/grey_s"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/space_7"
+        android:layout_marginLeft="@dimen/space_14"
+        android:layout_marginRight="@dimen/space_14"
+        android:layout_marginBottom="@dimen/space_7"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <ui.CustomtextView
+                    font:name = "GOTHAM_MEDIUM"
+
+                    android:text="Sisa"
+                    android:textSize="@dimen/space_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_gravity="center"
+                    android:src="@drawable/stock"
+                    android:layout_width="@dimen/space_20"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_alignParentRight="true"
+
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_marginLeft="@dimen/space_7"
+                    android:id="@+id/layout_uom1_sisa"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ui.CustomtextView
+                        android:textAllCaps="true"
+                        font:name = "GOTHAM_MEDIUM"
+                        android:id="@+id/text_label_uom1_sisa"
+                        android:text="CTN"
+                        android:textSize="@dimen/space_12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <ui.CustomtextView
+                        font:name = "GOTHAM_MEDIUM"
+                        android:layout_marginTop="@dimen/space_3"
+                        android:id="@+id/text_uom1_sisa"
+                        android:text="5"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/space_12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginLeft="@dimen/space_7"
+                    android:id="@+id/layout_uom2_sisa"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ui.CustomtextView
+                        android:textAllCaps="true"
+                        font:name = "GOTHAM_MEDIUM"
+                        android:id="@+id/text_label_uom2_sisa"
+                        android:text="PACK"
+                        android:textSize="@dimen/space_12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <ui.CustomtextView
+                        font:name = "GOTHAM_MEDIUM"
+                        android:layout_marginTop="@dimen/space_3"
+                        android:id="@+id/text_uom2_sisa"
+                        android:text="2"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/space_12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginLeft="@dimen/space_7"
+                    android:id="@+id/layout_uom3_sisa"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ui.CustomtextView
+                        android:textAllCaps="true"
+                        font:name = "GOTHAM_MEDIUM"
+                        android:id="@+id/text_label_uom3_sisa"
+                        android:text="PCS"
+                        android:textSize="@dimen/space_12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <ui.CustomtextView
+                        font:name = "GOTHAM_MEDIUM"
+                        android:layout_marginTop="@dimen/space_3"
+                        android:id="@+id/text_uom3_sisa"
+                        android:text="5"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/space_12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ui.CustomtextView
+                font:name = "GOTHAM_MEDIUM"
+                android:text="@string/dash_sales_label"
+                android:textSize="@dimen/space_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ui.CustomtextView
+                font:name = "GOTHAM_MEDIUM"
+                android:id="@+id/txtInvAmount"
+                android:text="Rp. "
+                android:textColor="@color/black"
+                android:textSize="@dimen/space_12"
+                android:layout_width="@dimen/space_100"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

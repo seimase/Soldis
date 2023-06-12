@@ -1,0 +1,268 @@
+<resources>
+    <string name="app_name">Soldis POS</string>
+    <string name="title_activity_login">Login</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <string name="drawer_open">Slider Menu Opened</string>
+    <string name="drawer_close">Slider Menu Closed</string>
+
+    <!--MainMenu-->
+    <string name="penghargaan">Penghargaan &amp; Hukuman</string>
+    <string name="informasi_pemohon">Informasi &amp; Kontak Pemohon</string>
+    <string name="informasi_lokasi_dan_pemohon">Lokasi Yand Diminta &amp; Informasi Pemohon</string>
+    <string name="informasi_pembayaran_dan_pemohon">Informasi Pemohon &amp; Pembayaran</string>
+    <string name="text_form"><u>FORM</u></string>
+
+    <string name="text_contact_us">Hubungi kami di</string>
+    <string name="text_contact">(Whatsapp/SMS)</string>
+    <string name="text_login">Masuk</string>
+    <string name="text_no_connection">Tidak ada koneksi internet</string>
+    <string name="locale">indonesia</string>
+    <string name="text_incorrect_userpass">UserId atau kata kunci salah</string>
+    <string name="text_user_id">Identitas pengguna</string>
+    <string name="text_password">Kata kunci</string>
+    <string name="text_branch">ID Mitra</string>
+    <string name="text_checking_data">Mengecek data</string>
+    <string name="text_confirmation">Konfimasi</string>
+    <string name="text_gps_is_off">GPS tidak aktif</string>
+    <string name="text_gps_not_locked">GPS belum terkunci</string>
+    <string name="text_data_saved">Menyimpan Data</string>
+    <string name="text_data_not_found">Tidak ada data</string>
+    <string name="text_refresh">Perbaharui</string>
+    <string name="text_no">Tidak</string>
+    <string name="text_yes">Ya</string>
+
+    <!--Login-->
+    <string name="login_used_motoris">ID AFH sudah dipakai oleh device lain, silahkan hubungi Team Support SFA</string>
+    <string name="login_update_data">Perbaharui data</string>
+
+    <!--MainMenu-->
+    <string name="main_wa_not_installed">Aplikasi WhatsApp belum terpasang</string>
+    <string name="main_logout">Anda telah logout</string>
+    <string name="main_mytransaction">Transaksi Saya</string>
+    <string name="main_home">Beranda</string>
+    <string name="main_dashboard">Ringkasan</string>
+    <string name="main_motorist">Ringkasan AFH</string>
+    <string name="main_time_visit">Waktu Kunjungan</string>
+    <string name="main_master">Master Data</string>
+    <string name="main_stock">Stok Barang</string>
+    <string name="main_daily_salesman">Harian AFH</string>
+    <string name="main_Information">Informasi</string>
+    <string name="main_presence">Ringkasan Kehadiran</string>
+    <string name="main_Feature">Keunggulan</string>
+    <string name="main_exit">Keluar</string>
+    <string name="main_version">Versi</string>
+    <string name="main_chat">Pesan</string>
+    <string name="main_start">MULAI</string>
+    <string name="main_finish">SELESAI</string>
+    <string name="main_view">LIHAT</string>
+    <string name="main_input">INPUT</string>
+    <string name="main_my_journey">Perjalanan Saya</string>
+    <string name="main_trophy">Piala</string>
+    <string name="main_your_journey">Perjalanan Anda</string>
+    <string name="main_your_achievment">Pencapaian Anda</string>
+    <string name="master_product">Produk</string>
+    <string name="master_outlet">Pelanggan</string>
+    <string name="master_data_product">Data Produk</string>
+    <string name="master_data_outlet">Data Pelanggan</string>
+    <string name="master_pre_reg">Prospek</string>
+    <string name="master_register">Terdaftar</string>
+    <string name="master_re_registration">Daftar Pelanggan</string>
+    <string name="master_data_summary">MASTER DATA &amp; RINGKASAN</string>
+    <string name="main_activity">AKTIVITAS</string>
+
+
+    <!--Time Visit-->
+    <string name="tv_timevisit">Waktu Kunjungan</string>
+    <string name="tv_time_start">Waktu Pergi</string>
+    <string name="tv_time_end">Waktu Pulang</string>
+    <string name="tv_do_you_starvisit">Mulai Kujungan ?</string>
+    <string name="tv_do_you_endvisit">Mengakhiri Kujungan ?</string>
+    <string name="tv_sync_start">Sinkronisasi data awal hari</string>
+    <string name="tv_sync_end">Sinkronisasi data akhir hari</string>
+    <string name="tv_sync_photo">Sinkronisasi foto</string>
+    <string name="tv_description">Waktu pergi adalah waktu dimana waktu berangkat dari kantor sedangkan waktu pulang adalah waktu tiba kembali ke kantor.</string>
+    <string name="tv_latest_information">Informasi terakhir</string>
+    <string name="tv_date_start">Tanggal Pergi</string>
+    <string name="tv_date_end">Tanggal Pulang</string>
+
+    <!--Setting-->
+    <string name="setting_setting">Pengaturan</string>
+    <string name="setting_sync_data">Sinkronisasi Data</string>
+    <string name="setting_sync_data_product">Sinkronisasi data produk ?</string>
+    <string name="setting_sync_data_outlet">Sinkronisasi data Pelanggan ?</string>
+    <string name="setting_sync_outlet">Data Pelanggan</string>
+    <string name="setting_sync_product">Data Produk</string>
+    <string name="setting_motoris_profile">Profil AFH</string>
+    <string name="setting_logout">Keluar</string>
+    <string name="setting_logout_app">Keluar dari aplikasi ?</string>
+    <string name="setting_transaction_not_complete">Transaksi belum selesai</string>
+    <string name="setting_sync_complete">Sinkronisasi selesai</string>
+    <string name="setting_check_for_update">Memeriksa pembaharuan aplikasi</string>
+    <string name="setting_restore">Mengembalikan data</string>
+    <string name="setting_token_not_valid">Token tidak sesuai</string>
+    <string name="setting_uptodate">Aplikasi anda sudah terbaru</string>
+
+    <!--Dashboard-->
+    <string name="dash_EC">EC / HARI</string>
+    <string name="dash_CALL">CALL / HARI</string>
+    <string name="dash_target">Target</string>
+    <string name="dash_visit">Kunjungan</string>
+    <string name="dash_strike">Pencapaian</string>
+    <string name="dash_sales">PENJUALAN</string>
+    <string name="dash_sales_label">Penjualan</string>
+    <string name="dash_stock_today">Stok Hari Ini</string>
+    <string name="dash_stock_in">Stok Masuk</string>
+    <string name="dash_stock_out">Stok Keluar</string>
+    <string name="dash_category">KATEGORI</string>
+    <string name="dash_achievment">PENCAPAIAN</string>
+    <string name="dash_mtd">BULANAN</string>
+    <string name="dash_days">HARIAN</string>
+    <string name="dash_outlet_data">DATA PELANGGAN</string>
+    <string name="dash_outlet_data_label">Data Pelanggan</string>
+    <string name="dash_outlet">Pelanggan</string>
+    <string name="dash_address">Alamat</string>
+    <string name="dash_date">TANGGAL : </string>
+    <string name="dash_date_label">Tanggal</string>
+    <string name="dash_month_label">Bulan</string>
+    <string name="dash_product">Produk :</string>
+    <string name="dash_sales_data">DATA PENJUALAN</string>
+    <string name="dash_sales_data_label">Data Penjualan</string>
+    <string name="dash_presence">KEHADIRAN</string>
+    <string name="dash_comes">Hadir</string>
+    <string name="dash_number_of_motoris">Jumlah AFH</string>
+    <string name="dash_start_date">Tanngal awal</string>
+    <string name="dash_end_date">Tanngal akhir</string>
+
+
+    <string name="dash_residual">Sisa</string>
+    <string name="dash_date_is">Tanggal</string>
+    <string name="dash_visit_plan">Rencana Kunjungan</string>
+    <string name="dash_not_visit">Tidak Terkunjungi</string>
+    <string name="dash_strike_plan">Rencana Pencapaian</string>
+    <string name="dash_not_strike">Tidak Tercapai</string>
+    <string name="dash_export_to_excel">Salin ke excel ?</string>
+    <string name="dash_no_application_excel">Tidak ada aplikasi Excel untuk melihat</string>
+    <string name="dash_not_complete">Belum Selesai</string>
+
+    <!--Profile-->
+    <string name="profile_id_leader">ID Leader</string>
+    <string name="profile_leader_name">Nama Leader</string>
+    <string name="profile_id_motoris">ID AFH</string>
+    <string name="profile_motoris_name">Nama AFH</string>
+    <string name="profile_level">Jabatan</string>
+    <string name="profile_tipe">Tipe</string>
+    <string name="profile_address">Alamat</string>
+    <string name="profile_city">Kota</string>
+    <string name="profile_transaction_date">Tanggal Transaksi</string>
+
+    <!--Stock-->
+    <string name="stock_input_stock">Input Stok</string>
+    <string name="stock_product_data">DATA PRODUK</string>
+    <string name="stock_product_name">Nama Produk</string>
+    <string name="stock_price">Harga</string>
+    <string name="stock_saved">Data disimpan ?</string>
+    <string name="stock_hasben_saved">Data telah tersimpan</string>
+    <string name="stock_stock">Stok</string>
+    <string name="stock_stock_value">Nilai Stok</string>
+
+    <!--Daily Motoris-->
+    <string name="daily_motoris">Harian AFH</string>
+    <string name="daily_search_outlet">Cari Pelanggan</string>
+    <string name="daily_total_visits">Total Kunjungan</string>
+    <string name="daily_keyword">Kata Pencarian</string>
+    <string name="daily_village">Kelurahan</string>
+    <string name="daily_branch">Jumlah Cabang</string>
+    <string name="daily_cancel">BATAL</string>
+    <string name="daily_search">CARI</string>
+    <string name="daily_all">Semua</string>
+    <string name="daily_back">KEMBALI</string>
+    <string name="daily_select_village">PILIH KELURAHAN</string>
+    <string name="daily_outlet_name">Pelanggan</string>
+    <string name="daily_ktp_name">Nama KTP</string>
+    <string name="daily_ktp_address">Alamat KTP</string>
+    <string name="daily_ktp_no">KTP No</string>
+    <string name="daily_npwp_name">Nama NPWP</string>
+    <string name="daily_npwp_address">Alamat NPWP</string>
+    <string name="daily_npwp_no">NPWP No</string>
+    <string name="daily_owner">Pemilik Pelanggan</string>
+    <string name="daily_company_name">Nama Perusahaan</string>
+    <string name="daily_classification">Klasifikasi</string>
+    <string name="daily_address">Alamat</string>
+    <string name="daily_save">Simpan</string>
+    <string name="daily_add">Tambah</string>
+    <string name="daily_process">Proses</string>
+    <string name="daily_sales_input">Input Penjualan</string>
+    <string name="daily_product_not_selected">Produk belum dipilih</string>
+    <string name="daily_data_in_process">Data di proses ?</string>
+    <string name="daily_not_so_transaction">Tidak jadi transaksi ?</string>
+    <string name="daily_data_hasbeen_process">Data telah diproses</string>
+    <string name="daily_cant_add">Tidak bisa tambah, proses data terlebih dahulu</string>
+    <string name="daily_no_data_for_process">Tidak ada data yang untuk di proses</string>
+    <string name="daily_sortby">URUTKAN DENGAN</string>
+    <string name="daily_transaction">Transaksi</string>
+    <string name="daily_no_transaction">Tidak ada transaksi</string>
+    <string name="daily_visit_to">Kunjungan ke</string>
+    <string name="daily_ec">EC</string>
+    <string name="daily_call">CALL</string>
+    <string name="daily_sales">PENJUALAN</string>
+    <string name="daily_date_of_next_visit">Tanggal kunjungan berikutnya</string>
+    <string name="daily_payment_type">Jenis Pengambilan</string>
+    <string name="daily_order_periode">Periode Order</string>
+    <string name="daily_contract_status">Status Kontrak</string>
+    <string name="daily_complete_visit">Selesai kunjungan ?</string>
+    <string name="daily_complete">Selesai</string>
+
+
+    <!--AddOutlet-->
+    <string name="addoutlet_outlet_name_must_be_filled">Nama Pelanggan harus diisi</string>
+    <string name="addoutlet_company_name_must_be_filled">Nama perusahaan harus diisi</string>
+    <string name="addoutlet_owner_must_be_filled">Pemilik Pelanggan harus diisi</string>
+    <string name="addoutlet_classification_must_be_filled">Klasifikasi harus diisi</string>
+    <string name="addoutlet_branch_must_be_filled">Jumlah cabang harus diisi</string>
+    <string name="addoutlet_next_visit_must_be_filled">Tanggal kunjungan harus diisi</string>
+    <string name="addoutlet_take_photo">Photo depan Pelanggan belum dilakukan!</string>
+    <string name="addoutlet_front">Depan</string>
+    <string name="addoutlet_side">Samping</string>
+    <string name="addoutlet_required">Wajib diisi/input</string>
+    <string name="addoutlet_error_sistem">Ada kesalahan sistem, silahkan restart aplikasi</string>
+    <string name="addoutlet_KTPNPWP_must_be_filled">KTP/NPWP harus diisi</string>
+    <string name="addoutlet_KTP_NO_must_be_filled">No KTP harus diisi</string>
+    <string name="addoutlet_KTP_Name_must_be_filled">Nama KTP harus diisi</string>
+    <string name="addoutlet_KTP_Address_must_be_filled">Alamat KTP harus diisi</string>
+    <string name="addoutlet_NPWP_NO_must_be_filled">No NPWP harus diisi</string>
+    <string name="addoutlet_NPWP_Name_must_be_filled">Nama NPWP harus diisi</string>
+    <string name="addoutlet_NPWP_Address_must_be_filled">Alamat NPWP harus diisi</string>
+    <string name="addoutlet_paymenttype_must_be_filled">Tipe pembayaran harus diisi</string>
+    <string name="addoutlet_periodeorder_must_be_filled">Periode order harus diisi</string>
+    <string name="addoutlet_start_contract_must_be_filled">Tanngal mulai kontrak harus diisi</string>
+    <string name="addoutlet_end_contract_must_be_filled">Tanngal mulai kontrak harus diisi</string>
+    <!--CustCard-->
+    <string name="custcard_time_in">Waktu Masuk</string>
+    <string name="custcard_time_out">Waktu keluar</string>
+    <string name="custcard_Chekin">Waktu keluar</string>
+    <string name="custcard_must_be">Must be selected one</string>
+
+    <string name="key_1">1</string>
+    <string name="key_2">2</string>
+    <string name="key_3">3</string>
+    <string name="key_4">4</string>
+    <string name="key_5">5</string>
+    <string name="key_6">6</string>
+    <string name="key_7">7</string>
+    <string name="key_8">8</string>
+    <string name="key_9">9</string>
+    <string name="key_0">0</string>
+</resources>

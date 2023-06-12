@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/layout_contract_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space_10"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/layout_back"
+                android:layout_width="@dimen/space_40"
+                android:layout_height="@dimen/space_40"
+                android:background="@drawable/selector_row_transparant"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="@dimen/space_25"
+                    android:layout_height="@dimen/space_25"
+                    android:src="@drawable/ic_arrow_back"
+                    android:tint="@color/black" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="fill"
+                android:layout_weight="1">
+
+                <ui.CustomtextView
+                    android:layout_marginLeft="@dimen/space_5"
+                    font:name = "Helvetica_Bold"
+                    android:textSize="@dimen/space_18"
+                    android:gravity="fill"
+                    android:textColor="@color/colorBlackEP"
+                    android:text="Pembayaran Sukses"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ui.CustomtextView
+                        android:layout_marginLeft="@dimen/space_5"
+                        font:name = "Helvetica_Book"
+                        android:textSize="@dimen/space_12"
+                        android:textColor="@color/colorBlackEP"
+                        android:text="Order : "
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"/>
+
+                    <ui.CustomtextView
+                        font:name = "Helvetica_Medium"
+                        android:textColor="@color/blue2"
+                        android:id="@+id/text_orderno"
+                        android:text="Order Number"
+                        android:textSize="@dimen/space_12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/layout_tgl"
+                android:background="@drawable/selector_row_transparant"
+                android:layout_width="@dimen/space_100"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/logo_soldis" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:background="@color/grey_s"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/space_30"
+        android:layout_marginBottom="@dimen/space_16"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:tint="@color/blue2"
+            android:src="@drawable/ic_check"
+            android:layout_width="@dimen/space_90"
+            android:layout_height="@dimen/space_90" />
+    </RelativeLayout>
+
+    <ui.CustomtextView
+        font:name = "Content"
+        android:textColor="@color/black"
+        android:textSize="@dimen/space_16"
+        android:gravity="center"
+        android:text="Pembayaran dengan Tunai berhasil dilakukan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <ui.CustomtextView
+        android:layout_marginTop="@dimen/space_40"
+        font:name = "Label"
+        android:textColor="@color/black"
+        android:textSize="@dimen/space_25"
+        android:gravity="center"
+        android:text="Uang Kembali"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ui.CustomtextView
+        android:id="@+id/txtKembali"
+        android:layout_marginTop="@dimen/space_7"
+        android:textColor="@color/black"
+        android:gravity="center"
+        font:name = "Avenir_Book"
+        font:type = "bold"
+        android:text="Rp 40.000"
+        android:textSize="@dimen/space_35"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_margin="@dimen/space_5"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ui.CustomtextView
+            android:id="@+id/txtPrint"
+            android:background="@color/black_ep"
+            font:name = "Helvetica_Book"
+            android:gravity="center"
+            android:padding="@dimen/space_14"
+            android:textSize="@dimen/space_18"
+            android:textColor="@color/white"
+            android:text="Cetak"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <View
+            android:layout_width="@dimen/space_5"
+            android:layout_height="match_parent"/>
+
+        <ui.CustomtextView
+            android:id="@+id/txtSave"
+            android:background="@color/colorBar"
+            font:name = "Helvetica_Book"
+            android:gravity="center"
+            android:padding="@dimen/space_14"
+            android:textSize="@dimen/space_18"
+            android:textColor="@color/white"
+            android:text="Selesai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

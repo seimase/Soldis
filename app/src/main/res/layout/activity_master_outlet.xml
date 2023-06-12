@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space_10"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/layout_back"
+                android:layout_width="@dimen/space_40"
+                android:layout_height="@dimen/space_40"
+                android:background="@drawable/selector_row_transparant"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="@dimen/space_25"
+                    android:layout_height="@dimen/space_25"
+                    android:src="@drawable/ic_arrow_back"
+                    android:tint="@color/black" />
+
+            </RelativeLayout>
+
+            <ui.CustomtextView
+                android:layout_marginLeft="@dimen/space_5"
+                font:name = "Helvetica_Bold"
+                android:textSize="@dimen/space_18"
+                android:gravity="fill"
+                android:textColor="@color/colorBlackEP"
+                android:text="@string/main_master"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <RelativeLayout
+                android:background="@drawable/selector_row_transparant"
+                android:layout_width="@dimen/space_100"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/logo_soldis" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:background="@color/grey_s"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:background="@color/colorBar"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/layout_search"
+            android:orientation="horizontal"
+            android:background="@drawable/btn_shape_all_white_search"
+            android:layout_margin="@dimen/space_14"
+            android:paddingTop="@dimen/space_10"
+            android:paddingBottom="@dimen/space_10"
+            android:paddingLeft="@dimen/space_10"
+            android:paddingRight="@dimen/space_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:layout_marginLeft="@dimen/space_5"
+                android:src="@drawable/search"
+                android:layout_width="@dimen/space_14"
+                android:layout_height="@dimen/space_14" />
+
+            <ui.CustomEditText
+                android:gravity="fill"
+                android:singleLine="true"
+                android:id="@+id/edtSearch"
+                font:name = "Content"
+                android:textSize="@dimen/space_12"
+                android:layout_marginLeft="@dimen/space_14"
+                android:textColor="@color/black"
+                android:background="@color/transparant_pure"
+                android:hint="@string/daily_search_outlet"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/layout_search_detail"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/space_10"
+        android:paddingBottom="@dimen/space_10"
+        android:paddingLeft="@dimen/space_14"
+        android:layout_marginRight="@dimen/space_14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ui.CustomtextView
+            font:name = "Label"
+            android:textColor="@color/black_ep"
+            android:text="@string/daily_keyword"
+            android:textSize="@dimen/space_12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ui.CustomEditText
+            font:name = "Content"
+            android:id="@+id/edt_keyword"
+            android:textSize="@dimen/space_12"
+            android:layout_marginBottom="@dimen/space_3"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <ui.CustomtextView
+            android:visibility="gone"
+            font:name = "GOTHAM_BOOK"
+            android:layout_marginTop="@dimen/space_5"
+            android:text="@string/daily_village"
+            android:textSize="@dimen/space_12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/layout_kelurahan"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/space_10"
+            android:paddingTop="@dimen/space_8"
+            android:paddingBottom="@dimen/space_8"
+            android:background="@drawable/btn_shape_all_black"
+            android:layout_marginTop="@dimen/space_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ui.CustomtextView
+                android:text="@string/daily_all"
+                android:id="@+id/txtKelurahan"
+                android:textSize="@dimen/space_12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:layout_marginRight="@dimen/space_5"
+                android:src="@drawable/arrow_down"
+                android:layout_width="@dimen/space_14"
+                android:layout_height="@dimen/space_14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/space_10"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:background="@drawable/btn_shape_all_red"
+                android:id="@+id/layout_batal"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:src="@drawable/com_facebook_tooltip_black_xout"
+                    android:tint="@color/white"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:layout_width="@dimen/space_12"
+                    android:layout_height="@dimen/space_12" />
+                <ui.CustomtextView
+                    font:name = "GOTHAM_BOLD"
+                    android:gravity="center"
+                    android:text="@string/daily_cancel"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/space_12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/space_20"
+                android:layout_height="1dp"/>
+
+            <LinearLayout
+                android:id="@+id/layout_cari"
+                android:background="@drawable/btn_shape_all_green_search"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:src="@drawable/search"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:tint="@color/white"
+                    android:layout_width="@dimen/space_12"
+                    android:layout_height="@dimen/space_12" />
+                <ui.CustomtextView
+                    android:gravity="center"
+                    font:name = "GOTHAM_BOLD"
+                    android:text="@string/daily_search"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/space_12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:padding="@dimen/space_12"
+            android:background="@drawable/selector_row"
+            android:id="@+id/layout_sync"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:src="@drawable/sync"
+                    android:tint="@color/grey"
+                    android:layout_width="@dimen/space_16"
+                    android:layout_height="@dimen/space_16" />
+
+                <ui.CustomtextView
+                    android:layout_marginLeft="@dimen/space_4"
+                    font:name = "Helvetica_Book"
+                    android:text="Sync Data"
+                    android:textSize="@dimen/space_12"
+                    android:gravity="fill"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_marginTop="@dimen/space_10"
+            android:layout_marginBottom="@dimen/space_10"
+            android:background="@color/grey"
+            android:layout_width="@dimen/space_1"
+            android:layout_height="match_parent"/>
+
+        <RelativeLayout
+            android:id="@+id/layout_add"
+            android:background="@drawable/selector_row"
+            android:padding="@dimen/space_12"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:src="@drawable/ic_add"
+                    android:tint="@color/grey"
+                    android:layout_width="@dimen/space_16"
+                    android:layout_height="@dimen/space_16" />
+
+                <ui.CustomtextView
+                    android:layout_marginLeft="@dimen/space_4"
+                    font:name = "Helvetica_Book"
+                    android:text="Prospek"
+                    android:textSize="@dimen/space_12"
+                    android:gravity="fill"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:background="@color/colorLineBar"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"/>
+    <View
+        android:background="@color/grey_s"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_10"/>
+
+    <RelativeLayout
+        android:id="@+id/layout_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/my_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </RelativeLayout>
+
+    <View
+        android:background="@color/colorLineBar"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:background="@color/grey_s"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:padding="@dimen/space_7"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/layout_total"
+                android:background="@drawable/btn_shape_all_green"
+                android:padding="@dimen/space_3"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ui.CustomtextView
+                    android:gravity="center"
+                    font:name = "Header"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/space_12"
+                    android:text="TOTAL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <ui.CustomtextView
+                    android:gravity="center"
+                    font:name = "Header"
+                    font:type = "bold"
+                    android:textSize="@dimen/space_12"
+                    android:textColor="@color/white"
+                    android:id="@+id/txtTotalOutlet"
+                    android:text="10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:id="@+id/vwTotal"
+                    android:layout_marginLeft="@dimen/space_7"
+                    android:layout_marginRight="@dimen/space_7"
+                    android:background="@color/yellow"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"/>
+            </LinearLayout>
+
+            <View
+                android:background="@color/grey_s"
+                android:layout_width="@dimen/space_7"
+                android:layout_height="match_parent"/>
+
+
+            <LinearLayout
+                android:background="@drawable/btn_shape_all_green"
+                android:padding="@dimen/space_3"
+                android:id="@+id/layout_total_prereg"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ui.CustomtextView
+                    android:gravity="center"
+                    font:name = "Header"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/space_12"
+                    android:text="@string/master_pre_reg"
+                    android:textAllCaps="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <ui.CustomtextView
+                    android:gravity="center"
+                    font:name = "Header"
+                    font:type = "bold"
+                    android:textSize="@dimen/space_12"
+                    android:textColor="@color/white"
+                    android:id="@+id/txtTotalPreReg"
+                    android:text="10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:id="@+id/vwProspek"
+                    android:layout_marginLeft="@dimen/space_7"
+                    android:layout_marginRight="@dimen/space_7"
+                    android:background="@color/yellow"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"/>
+            </LinearLayout>
+
+            <View
+                android:background="@color/grey_s"
+                android:layout_width="@dimen/space_7"
+                android:layout_height="match_parent"/>
+
+            <LinearLayout
+                android:background="@drawable/btn_shape_all_green"
+                android:padding="@dimen/space_3"
+                android:id="@+id/layout_total_register"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ui.CustomtextView
+                    android:gravity="center"
+                    font:name = "Header"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/space_12"
+                    android:text="@string/master_register"
+                    android:textAllCaps="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <ui.CustomtextView
+                    android:gravity="center"
+                    font:name = "Header"
+                    font:type = "bold"
+                    android:textSize="@dimen/space_12"
+                    android:textColor="@color/white"
+                    android:id="@+id/txtTotalRegister"
+                    android:text="10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:id="@+id/vwRegister"
+                    android:layout_marginLeft="@dimen/space_7"
+                    android:layout_marginRight="@dimen/space_7"
+                    android:background="@color/yellow"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

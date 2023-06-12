@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/transparant_pure"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/space_20"
+        android:layout_marginLeft="@dimen/space_20"
+        android:layout_marginRight="@dimen/space_20"
+        android:background="@drawable/btn_shape_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_100">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="@dimen/space_18"
+            android:background="@drawable/btn_shape_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_100">
+
+            <ui.CustomtextView
+                font:name = "GOTHAM_BOLD"
+                android:id="@+id/text_dialog"
+                android:textColor="@color/black"
+                android:textSize="@dimen/space_14"
+                android:gravity="center"
+                android:text="-"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:paddingTop="@dimen/space_14"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ui.CustomtextView
+                    android:gravity="center"
+                    font:name = "GOTHAM_BOLD"
+                    android:textSize="@dimen/space_12"
+                    android:text="@string/stock_stock_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <ui.CustomtextView
+                    font:name = "GOTHAM_BOLD"
+                    android:gravity="center"
+                    android:textColor="@color/colorReject"
+                    android:id="@+id/txtValueStock"
+                    android:textSize="@dimen/space_18"
+                    android:text="Rp 1.000.000"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/space_10"
+        android:layout_marginLeft="@dimen/space_18"
+        android:layout_marginRight="@dimen/space_18"
+        android:background="@drawable/btn_shape_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_45">
+
+        <ui.CustomtextView
+            android:id="@+id/text_yes"
+            font:name = "Header"
+            font:type = "bold"
+            android:textColor="@color/black_ep"
+            android:textSize="@dimen/space_18"
+            android:gravity="center"
+            android:text="@string/text_yes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <View
+            android:layout_marginTop="@dimen/space_5"
+            android:layout_marginBottom="@dimen/space_5"
+            android:background="@color/colorLineBar"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"/>
+        <ui.CustomtextView
+            android:id="@+id/text_no"
+            font:name = "GOTHAM_BOLD"
+            android:textColor="@color/black_ep"
+            android:textSize="@dimen/space_18"
+            android:gravity="center"
+            android:text="@string/text_no"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+</LinearLayout>

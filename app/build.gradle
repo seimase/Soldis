@@ -1,0 +1,155 @@
+apply plugin: 'com.android.application'
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+
+apply plugin: 'io.fabric'
+android {
+    compileSdkVersion 24
+    buildToolsVersion '27.0.3'
+    useLibrary 'org.apache.http.legacy'
+    defaultConfig {
+        applicationId "com.soldis.yourthaitea"
+        minSdkVersion 16
+        targetSdkVersion 24
+        versionCode 7
+        versionName "1.0.0.7"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        multiDexEnabled true
+    }
+
+    /*
+         //keystore_univenus.jks
+         MD5:  5D:00:B6:93:89:9C:9D:07:34:95:DF:EC:42:48:AF:57
+         SHA1: 8F:18:12:53:27:44:1B:6F:C2:C8:B8:CF:2D:23:3C:74:DF:FF:4B:9F
+         SHA256: EC:85:4D:04:02:82:2B:27:90:2A:A3:A8:5B:2D:D6:D4:61:3D:30:FB:D4:BB:C8:E4:CE:6F:5C:FA:A2:B5:C6:65
+     */
+    /*
+        //key_freelancer.jks
+          MD5:  6B:91:0A:72:84:E3:7C:4D:E7:30:FD:21:17:ED:EE:4F
+         SHA1: AE:CE:21:8E:CD:A4:23:5A:2F:FE:A3:16:0B:D3:C0:6C:CB:68:22:48
+         SHA256: 5B:91:24:31:7F:61:E8:3A:DF:52:2C:25:A7:A1:95:5F:7F:A9:CE:EC:85:CD:24:15:5C:44:A3:4A:92:DB:5A:F7
+     */
+    signingConfigs {
+        release {
+            storeFile file("key_freelancer.jks")
+            storePassword "Senoe@070485"
+            keyAlias "freelancer"
+            keyPassword "Senoe@070485"
+        }
+        debug {
+            storeFile file("key_freelancer.jks")
+            storePassword "Senoe@070485"
+            keyAlias "freelancer"
+            keyPassword "Senoe@070485"
+        }
+    }
+
+    buildTypes {
+        release {
+            lintOptions {
+                checkReleaseBuilds false
+                abortOnError false
+            }
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
+        }
+
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+    repositories {
+        mavenCentral()
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    sourceSets { main { assets.srcDirs = ['src/main/assets', 'src/main/assets/'] } }
+}
+
+
+repositories {
+
+    maven { url "https://jitpack.io" }
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+repositories {
+    maven {
+        url 'https://dl.bintray.com/ayz4sci/maven/'
+    }
+    google()
+}
+
+dependencies {
+    implementation files('libs/jxl.jar')
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    androidTestImplementation 'junit:junit:4.12'
+    testImplementation 'junit:junit:4.12'
+
+    implementation 'net.zetetic:android-database-sqlcipher:3.5.9@aar'
+
+    implementation 'com.google.firebase:firebase-core:11.4.2'
+    implementation('com.crashlytics.sdk.android:crashlytics:2.7.1@aar') {
+        transitive = true
+    }
+    //
+    implementation 'org.apache.commons:commons-lang3:3.6'
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:recyclerview-v7:24.2.1'
+    implementation 'com.android.support:appcompat-v7:24.2.1'
+    implementation 'com.android.support:design:24.2.1'
+    implementation 'com.google.android.gms:play-services:11.4.2'
+    implementation 'com.facebook.android:facebook-android-sdk:4.11.0'
+    implementation 'com.google.http-client:google-http-client-android:1.21.0'
+    implementation 'com.google.api-client:google-api-client-android:1.21.0'
+    implementation 'com.google.api-client:google-api-client-gson:1.21.0'
+    //Bootom Menu-----------------------------------------------
+    implementation 'com.aurelhubert:ahbottomnavigation:2.1.0'
+    //Retrofit REST -------------------------------------------
+    implementation 'com.squareup.retrofit2:retrofit:2.1.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.1.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.3.0'
+    //Chart
+    implementation 'com.github.PhilJay:MPAndroidChart:v2.1.6'
+    //DownloadProgress
+    implementation 'com.ayz4sci.androidfactory:downloadprogress:1.0.1'
+    //Maetial Tanggal-------------------------------------------
+    implementation 'com.wdullaer:materialdatetimepicker:2.4.0'
+    //Drawing Route Maps----------------------------------------
+    implementation 'com.github.ar-android:DrawRouteMaps:1.0.0'
+    //Resize
+    implementation 'com.github.hkk595:Resizer:v1.3'
+    implementation 'com.github.HendrixString:Android-PdfMyXml:1.0.8'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+
+    implementation 'com.github.jkwiecien:EasyImage:2.0.4'
+
+    //PasscodeView
+    implementation 'com.kevalpatel2106:passcodeview:2.0.0'
+
+    implementation 'com.github.zurche:plain-pie:v0.2.9'
+
+    //Barcode
+    implementation 'com.journeyapps:zxing-android-embedded:3.6.0@aar'
+    implementation 'com.google.zxing:core:3.3.0'
+}
+apply plugin: 'com.google.gms.google-services'
+

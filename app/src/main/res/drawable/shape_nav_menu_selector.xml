@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:drawable="@drawable/shape_nav_menu_pressed" android:state_pressed="false" android:state_selected="true" android:color="@color/white"/>
+<item android:drawable="@drawable/shape_nav_menu_normal" android:color="@color/black" android:state_selected="false"/>
+
+</selector>

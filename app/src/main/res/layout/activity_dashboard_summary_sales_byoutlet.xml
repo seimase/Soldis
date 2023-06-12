@@ -1,0 +1,643 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBar"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <include
+        android:visibility="gone"
+        layout="@layout/tool_bar_master"
+        android:id="@+id/tool_bar"
+        />
+
+    <RelativeLayout
+        android:id="@+id/layout_contract_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space_10"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/layout_back"
+                android:layout_width="@dimen/space_40"
+                android:layout_height="@dimen/space_40"
+                android:background="@drawable/selector_row_transparant"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="@dimen/space_25"
+                    android:layout_height="@dimen/space_25"
+                    android:src="@drawable/ic_arrow_back"
+                    android:tint="@color/black" />
+
+            </RelativeLayout>
+
+            <ui.CustomtextView
+                android:id="@+id/txtLabel"
+                android:layout_marginLeft="@dimen/space_5"
+                font:name = "Helvetica_Bold"
+                android:textSize="@dimen/space_18"
+                android:gravity="fill"
+                android:textColor="@color/colorBlackEP"
+                android:text="Penjualan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <RelativeLayout
+                android:id="@+id/layout_tgl"
+                android:background="@drawable/selector_row_transparant"
+                android:layout_width="@dimen/space_100"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/logo_soldis" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:background="@color/grey_s"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_160"
+            android:clipToPadding="false"
+            android:overScrollMode="never"
+            android:layout_marginTop="@dimen/space_14"
+            android:layout_marginBottom="@dimen/space_5"
+            android:paddingEnd="@dimen/space_45"
+            android:paddingLeft="@dimen/space_20"
+            android:paddingRight="@dimen/space_20"
+            android:paddingStart="@dimen/space_14" >
+
+        </android.support.v4.view.ViewPager>
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/space_7"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:padding="@dimen/space_7"
+                android:background="@color/colorBar"
+                android:layout_marginTop="@dimen/space_7"
+                android:layout_marginRight="@dimen/space_14"
+                android:layout_marginLeft="@dimen/space_14"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ui.CustomtextView
+                    font:name = "GOTHAM_BOLD"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dash_category"
+                    android:textSize="@dimen/space_12"
+                    android:textColor="@color/white"
+                    android:layout_weight="1.15"/>
+
+                <View
+                    android:background="@color/white"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"/>
+                <ui.CustomtextView
+                    font:name = "GOTHAM_BOLD"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TARGET"
+                    android:gravity="center"
+                    android:textSize="@dimen/space_12"
+                    android:textColor="@color/white"
+                    android:layout_weight="1"/>
+
+                <View
+                    android:background="@color/white"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"/>
+                <ui.CustomtextView
+                    font:name = "GOTHAM_BOLD"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dash_achievment"
+                    android:textSize="@dimen/space_12"
+                    android:textColor="@color/white"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:background="@color/white"
+                    android:padding="@dimen/space_5"
+                    android:layout_marginRight="@dimen/space_14"
+                    android:layout_marginLeft="@dimen/space_14"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ui.CustomtextView
+                        font:name = "GOTHAM_BOLD"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dash_EC"
+                        android:textSize="@dimen/space_11"
+                        android:layout_weight="1.15"/>
+
+                    <ui.CustomtextView
+                        android:layout_marginRight="@dimen/space_14"
+                        font:name = "GOTHAM_BOLD"
+                        android:id="@+id/txtECTarget"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:gravity="right"
+                        android:textSize="@dimen/space_11"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"/>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ui.CustomtextView
+                            android:id="@+id/txtECPencapaian"
+                            font:name = "GOTHAM_BOLD"
+                            android:gravity="right"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textSize="@dimen/space_11"
+                            android:textColor="@color/black"
+                            android:layout_weight="1"/>
+
+                        <ImageView
+                            android:visibility="invisible"
+                            android:layout_gravity="center"
+                            android:id="@+id/imgMedalEC"
+                            android:src="@drawable/medal"
+                            android:layout_width="@dimen/space_10"
+                            android:layout_height="@dimen/space_10" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="@color/teledokter_lightgreen"
+                    android:padding="@dimen/space_5"
+                    android:layout_marginRight="@dimen/space_14"
+                    android:layout_marginLeft="@dimen/space_14"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ui.CustomtextView
+                        font:name = "GOTHAM_BOLD"
+                        android:paddingLeft="@dimen/space_16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dash_mtd"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/space_11"
+                        android:layout_weight="1.15"/>
+
+                    <ui.CustomtextView
+                        android:layout_marginRight="@dimen/space_14"
+                        font:name = "GOTHAM_BOLD"
+                        android:id="@+id/txtECTargetMTD"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:gravity="right"
+                        android:textSize="@dimen/space_11"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"/>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ui.CustomtextView
+                            android:id="@+id/txtECPencapaianMTD"
+                            font:name = "GOTHAM_BOLD"
+                            android:gravity="right"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textSize="@dimen/space_11"
+                            android:textColor="@color/black"
+                            android:layout_weight="1"/>
+
+                        <ImageView
+                            android:visibility="invisible"
+                            android:layout_gravity="center"
+                            android:id="@+id/imgMedalECPencapaianMTD"
+                            android:src="@drawable/medal"
+                            android:layout_width="@dimen/space_10"
+                            android:layout_height="@dimen/space_10" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="@color/white"
+                    android:padding="@dimen/space_5"
+                    android:layout_marginRight="@dimen/space_14"
+                    android:layout_marginLeft="@dimen/space_14"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ui.CustomtextView
+                        font:name = "GOTHAM_BOLD"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dash_CALL"
+                        android:textSize="@dimen/space_11"
+                        android:layout_weight="1.15"/>
+
+                    <ui.CustomtextView
+                        android:layout_marginRight="@dimen/space_14"
+                        font:name = "GOTHAM_BOLD"
+                        android:id="@+id/txtCallTarget"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:gravity="right"
+                        android:textSize="@dimen/space_11"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"/>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ui.CustomtextView
+                            android:id="@+id/txtCallPencapaian"
+                            font:name = "GOTHAM_BOLD"
+                            android:gravity="right"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textSize="@dimen/space_11"
+                            android:textColor="@color/black"
+                            android:layout_weight="1"/>
+
+                        <ImageView
+                            android:visibility="invisible"
+                            android:layout_gravity="center"
+                            android:id="@+id/imgMedalCall"
+                            android:src="@drawable/medal"
+                            android:layout_width="@dimen/space_10"
+                            android:layout_height="@dimen/space_10" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="@color/teledokter_lightgreen"
+                    android:padding="@dimen/space_5"
+                    android:layout_marginRight="@dimen/space_14"
+                    android:layout_marginLeft="@dimen/space_14"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ui.CustomtextView
+                        font:name = "GOTHAM_BOLD"
+                        android:paddingLeft="@dimen/space_16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dash_mtd"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/space_11"
+                        android:layout_weight="1.15"/>
+
+                    <ui.CustomtextView
+                        android:layout_marginRight="@dimen/space_14"
+                        font:name = "GOTHAM_BOLD"
+                        android:id="@+id/txtCallTargetMTD"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:gravity="right"
+                        android:textSize="@dimen/space_11"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"/>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ui.CustomtextView
+                            android:id="@+id/txtCallPencapaianMTD"
+                            font:name = "GOTHAM_BOLD"
+                            android:gravity="right"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textSize="@dimen/space_11"
+                            android:textColor="@color/black"
+                            android:layout_weight="1"/>
+
+                        <ImageView
+                            android:visibility="invisible"
+                            android:layout_gravity="center"
+                            android:id="@+id/imgMedalCallPencapaianMTD"
+                            android:src="@drawable/medal"
+                            android:layout_width="@dimen/space_10"
+                            android:layout_height="@dimen/space_10" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="@color/white"
+                    android:padding="@dimen/space_5"
+                    android:layout_marginRight="@dimen/space_14"
+                    android:layout_marginLeft="@dimen/space_14"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ui.CustomtextView
+                        font:name = "GOTHAM_BOLD"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dash_sales"
+                        android:textSize="@dimen/space_11"
+                        android:layout_weight="1.15"/>
+
+
+                    <ui.CustomtextView
+                        android:layout_marginRight="@dimen/space_14"
+                        android:id="@+id/txtSalesTarget"
+                        font:name = "GOTHAM_BOLD"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:gravity="right"
+                        android:textSize="@dimen/space_11"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"/>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ui.CustomtextView
+                            android:id="@+id/txtSalesPencapaian"
+                            font:name = "GOTHAM_BOLD"
+                            android:gravity="right"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textSize="@dimen/space_11"
+                            android:textColor="@color/black"
+                            android:layout_weight="1"/>
+
+                        <ImageView
+                            android:visibility="invisible"
+                            android:layout_gravity="center"
+                            android:id="@+id/imgMedalSalesPencapaian"
+                            android:src="@drawable/medal"
+                            android:layout_width="@dimen/space_10"
+                            android:layout_height="@dimen/space_10" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="@color/teledokter_lightgreen"
+                    android:padding="@dimen/space_5"
+                    android:layout_marginRight="@dimen/space_14"
+                    android:layout_marginLeft="@dimen/space_14"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ui.CustomtextView
+                        font:name = "GOTHAM_BOLD"
+                        android:paddingLeft="@dimen/space_16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dash_mtd"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/space_11"
+                        android:layout_weight="1.15"/>
+
+
+                    <ui.CustomtextView
+                        android:layout_marginRight="@dimen/space_14"
+                        android:id="@+id/txtSalesTargetMTD"
+                        font:name = "GOTHAM_BOLD"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:gravity="right"
+                        android:textSize="@dimen/space_11"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"/>
+
+
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ui.CustomtextView
+                            android:id="@+id/txtSalesPencapaianMTD"
+                            font:name = "GOTHAM_BOLD"
+                            android:gravity="right"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textSize="@dimen/space_11"
+                            android:textColor="@color/black"
+                            android:layout_weight="1"/>
+
+                        <ImageView
+                            android:visibility="invisible"
+                            android:layout_gravity="center"
+                            android:id="@+id/imgMedalSalesPencapaianMTD"
+                            android:src="@drawable/medal"
+                            android:layout_width="@dimen/space_10"
+                            android:layout_height="@dimen/space_10" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+            </android.support.v7.widget.CardView>
+
+
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@color/grey_s"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ui.CustomtextView
+                                android:paddingTop="@dimen/space_14"
+                                android:paddingBottom="@dimen/space_14"
+                                android:paddingLeft="@dimen/space_14"
+                                font:name = "Helvetica_Bold"
+                                android:text="Data transaksi"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/space_14"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"/>
+
+                            <ui.CustomtextView
+                                android:gravity="right"
+                                android:paddingTop="@dimen/space_14"
+                                android:paddingBottom="@dimen/space_14"
+                                android:paddingRight="@dimen/space_14"
+                                font:name = "Helvetica_Medium"
+                                android:text="Data transaksi"
+                                android:id="@+id/txtTgl"
+                                android:textColor="@color/blue2"
+                                android:textSize="@dimen/space_14"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:visibility="gone"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ui.CustomtextView
+                                android:paddingTop="@dimen/space_14"
+                                android:paddingBottom="@dimen/space_14"
+                                font:name = "GOTHAM_MEDIUM"
+                                android:text="Total : "
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/space_14"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <ui.CustomtextView
+                                font:name = "GOTHAM_BOLD"
+                                android:text="-"
+                                android:id="@+id/txtTotalPrice"
+                                android:textColor="@color/red_deep"
+                                android:textSize="@dimen/space_14"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <View
+                        android:background="@color/colorLineBar"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/my_recyclerview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentTop="true"
+                        android:layout_weight="1"/>
+
+                    <View
+                        android:background="@color/colorLineBar"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
+
+
